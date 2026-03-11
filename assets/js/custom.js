@@ -227,16 +227,36 @@ document.addEventListener('keydown', (e) => {
       }
     });
 
-// FAQ 
-      document.querySelectorAll('.faq-accordion .accordion-button').forEach((button) => {
-      button.addEventListener('click', function () {
-        const parentAccordion = this.closest('.accordion');
 
-        parentAccordion.querySelectorAll('.accordion-button').forEach((btn) => {
-          if (btn !== this) {
-            btn.classList.add('collapsed');
-          }
-        });
-      });
-    });
- 
+
+    // Model Headshots
+const heroImg = document.querySelector(".image_contaner img");
+
+window.addEventListener("scroll", () => {
+
+    const scrollY = window.scrollY;
+    heroImg.style.transform = `translateY(${scrollY * 0.35}px)`;
+
+});
+
+
+// sticky header
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  const header = document.querySelector(".site-header");
+
+  window.addEventListener("scroll", function () {
+    
+    if (window.scrollY > 100) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+
+  });
+
+});
+
+

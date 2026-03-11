@@ -87,6 +87,12 @@ function esc_attr($str) {
 
 <!-- Main CSS -->
 <link href="assets/css/style.css" rel="stylesheet">
+<link href="assets/css/model-headshots.css" rel="stylesheet">
+<link href="assets/css/corporate-headshots.css" rel="stylesheet">
+<link href="assets/css/about-us.css" rel="stylesheet">
+<link href="assets/css/pagesstyle.css" rel="stylesheet">
+<link href="assets/css/blogs.css" rel="stylesheet">
+
 
 <!-- Structured Data (Organization/Service) -->
 <script type="application/ld+json">
@@ -114,14 +120,36 @@ function esc_attr($str) {
 
 
 <body>
+<div class="contact-row">
 
-<header class="site-header py-4">
-  <div class="container">
+  <div class="contact-item">
+    <i class="fas fa-envelope icon"></i>
+    <a href="mailto:photos@maicolphotography.com" class="text">
+      photos@maicolphotography.com
+    </a>
+  </div>
 
-    <nav class="navbar navbar-expand-lg maicol-navbar">
+  <div class="contact-item">
+    <i class="fas fa-phone icon"></i>
+    <a href="tel:+15612310580" class="text">
+      (561) 231-0580
+    </a>
+  </div>
+
+  <div class="contact-item">
+    <i class="fas fa-map-marker-alt icon"></i>
+    <span class="text">
+      1016 Clare Ave, STE 5, West Palm Beach, FL 33401
+    </span>
+  </div>
+
+</div>
+<header class="site-header">
+  <div class="container-fluid">
+     <nav class="navbar navbar-expand-lg maicol-navbar">
 
       <!-- LOGO -->
-      <a class="navbar-brand" href="/">
+      <a class="navbar-brand" href="index.php">
         <img class="brand-logo" src="assets/img/loggo.webp" alt="Maicol Photography Logo">
       </a>
 
@@ -133,7 +161,7 @@ function esc_attr($str) {
       </div>
 
       <!-- DESKTOP CTA -->
-      <a class="cta-btn maicol-cta d-none d-lg-inline-flex"
+      <a class="cta-btn-header  maicol-cta d-none d-lg-inline-flex"
          href="https://www.maicolphotography.com/#booking">
         Book Your Experience
       </a>
@@ -153,13 +181,13 @@ function esc_attr($str) {
 
           <a href="index.php">Professional Headshots</a>
 
-          <a href="model.php">Model Headshots</a>
+          <a href="model-headshots.php">Model Headshots</a>
 
-          <a href="corporate.php">Corporate Headshots</a>
+          <a href="corporate-headshots.php">Corporate Headshots</a>
 
           <!-- MOBILE CTA -->
-          <a class="cta-btn d-lg-none mt-3"
-             href="https://www.maicolphotography.com/#booking">
+          <a class="cta-btn-header d-lg-none mt-3"
+             href="#booking">
              Book Your Experience
           </a>
 

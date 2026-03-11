@@ -17,11 +17,11 @@ include "header.php";
     </div>
 
 </section>
-<section class="about-section wow fadeInUp">
+<section class="about-section" >
     <div class="container">
         <div class="row">
-            <h1 class="main-title">Be recognized, not introduced.</h1>
-            <h3 class="sub-title">Professional Headshots in West Palm Beach</h3>
+            <h2 class="main-title">Be recognized, not introduced.</h2>
+            <h1 class="sub-title">Professional Headshots in West Palm Beach</h1>
             <div class="button_cta">
                 <a href="#booking">Book Your Experience</a>
             </div>
@@ -34,7 +34,7 @@ include "header.php";
 </section>
 
 
- <section class="branding-section wow animate__animated fadeInUp">
+<section class="branding-section wow animate__animated animate__fadeInUp" data-wow-duration="1s">
     <div class="container">
       <!-- First Row: Video -->
       <div class="video-wrapper">
@@ -55,10 +55,12 @@ include "header.php";
           </button>
         </div>
       </div>
-
+        <div class="row text-center pt-5">
+          <h2 class="text-white">Why Your Headshot Matters</h2>
+        </div>
       <!-- Second Row: 3 Columns -->
       <div class="row features-row">
-        <div class="col-lg-4 col-md-6 feature-col wow animate__animated fadeInUp">
+        <div class="col-lg-4 col-md-6 feature-col wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
           <div class="feature-number">01</div>
           <h3 class="feature-title">Establish Presence</h3>
           <p class="feature-text">
@@ -66,7 +68,7 @@ include "header.php";
           </p>
         </div>
 
-        <div class="col-lg-4 col-md-6 feature-col wow animate__animated fadeInUp" >
+        <div class="col-lg-4 col-md-6 feature-col wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
           <div class="feature-number">02</div>
           <h3 class="feature-title">Control Perception</h3>
           <p class="feature-text">
@@ -74,7 +76,7 @@ include "header.php";
           </p>
         </div>
 
-        <div class="col-lg-4 col-md-12 feature-col wow animate__animated fadeInUp" >
+        <div class="col-lg-4 col-md-12 feature-col wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
           <div class="feature-number">03</div>
           <h3 class="feature-title">Build Trust</h3>
           <p class="feature-text">
@@ -83,37 +85,33 @@ include "header.php";
         </div>
       </div>
     </div>
-  </section>
+</section>
 
 <section id="recognized-section">
   <div class="recognized-container">
 
-    <h2 class="recognized-title wow fadeInUp">
-      "Am I doing this right?" to "I am<br>recognized."
+    <h2 class="recognized-title wow animate__animated animate__fadeInUp" data-wow-duration="1s">
+      "Am I doing this right?" to "I am recognized."
     </h2>
 
-    <p class="recognized-sub wow fadeInUp" data-wow-delay="0.2s">
-      Most people tense up when the camera comes out. They try too hard.
-      The result looks, at best, uncomfortable.
+    <p class="recognized-sub wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+      Most people tense up when the camera comes out. They try too hard. The result looks, at best, uncomfortable.
     </p>
 
-    <div class="recognized-divider wow fadeInUp" data-wow-delay="0.4s">
+    <div class="recognized-divider wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
       <span>NOT HERE.</span>
       <div class="line"></div>
     </div>
 
-    <p class="recognized-text wow fadeInUp" data-wow-delay="0.6s">
-      I take the lead so you can let go. I guide you out of your head and
-      into your element to capture your absolute best. We don't just look
-      for one lucky shot. We capture the full range of your confidence.
-      The goal is a collection of images that defines who you are, tells
+    <p class="recognized-text wow animate__animated animate__fadeInUp" data-wow-delay="0.6s">
+      I take the lead so you can let go. I guide you out of your head and into your element to capture your absolute best. We don't just look for one lucky shot. We capture the full range of your confidence. The goal is a collection of images that defines who you are, tells
       your story, and establishes your reputation.
     </p>
 
   </div>
 </section>
 
- <section class="gallery-section">
+<section class="gallery-section">
     <div class="container-fluid">
 
         <div class="section-heading">
@@ -121,25 +119,31 @@ include "header.php";
             <p>The professionals setting the standard in West Palm Beach and Palm Beach County.</p>
         </div>
 
-        <div class="row" id="gallery">
-            <?php
+     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 gx-4 gy-4" id="gallery">
+<?php
+$images = [
+    "mary-paul-editor-palm-beach-post-maicol-photography.jpg",
+    "mckenna-west-planning-project-manager-headshot-west-palm-beach-maicol-photography.webp"
+];
 
-            $images = glob("assets/img/professional/images/*.{jpg,jpeg,png,webp}", GLOB_BRACE);
-            $images = array_slice($images, 0, 12); // only first 12 images
+function studio_headshots_photography_alt($filename) {
+    $name = pathinfo($filename, PATHINFO_FILENAME);
+    $name = str_replace(['-', '_'], ' ', $name);
+    return ucwords($name);
+}
 
-            foreach($images as $img){
+foreach ($images as $index => $img) {
 
-            $filename = basename($img);
-            $alt = ucwords(str_replace('-', ' ', pathinfo($filename, PATHINFO_FILENAME)));
-
-            echo '<div class="col-6 col-md-4 col-lg-2 gallery-item wow animate__animated animate__zoomInUp">';
-            echo '<img src="'.$img.'" alt="'.$alt.'">';
-            echo '</div>';
-
-            }
-
-            ?>
-        </div>
+    $filename = basename($img);
+    $name = studio_headshots_photography_alt($filename);
+    $itemDelay = number_format((($index % 5) * 0.1), 1);
+?>
+    <div class="col gallery-item wow animate__animated animate__zoomInUp" data-wow-delay="<?= $itemDelay ?>s">
+        <img src="assets/img/professional/images/<?= $img ?>" class="img-fluid" alt="<?= $name ?>">
+        <p class="text-center mt-2 small"><?= $name ?></p>
+    </div>
+<?php } ?>
+</div>
 
     </div>
 </section>
@@ -152,7 +156,7 @@ include "header.php";
     <div class="arrow arrow-right" id="next">&#10095;</div>
 </div>
 
-<section class="reviews-section">
+<section class="reviews-section wow animate__animated animate__fadeInUp" data-wow-duration="1s">
   <div class="container-fluid">
     
     <!-- Row 1: Heading + Paragraph -->
@@ -176,15 +180,15 @@ include "header.php";
   </div>
 </section>
 
-<section class="gallery-section-two">
+<section class="gallery-section-two wow animate__animated animate__fadeInUp" data-wow-duration="1s">
 
   <!-- 1st Row -->
-  <div class="container text-center">
+  <!-- <div class="container text-center">
     <div class="section-heading">
             <h2>Professional Headshot <span>Portfolio </span></h2>
             <p> Modern professional portraits designed for executives, founders, and personal branding.</p>
         </div>
-  </div>
+  </div> -->
 
   <!-- 2nd Row -->
   <div class="gallery-row-two">
@@ -208,7 +212,7 @@ include "header.php";
 
 </section>
 
-<section class="pricing-section" id="booking">
+<section class="pricing-section wow animate__animated animate__fadeInUp" data-wow-duration="1s" id="booking">
     <div class="container">
 
       <!-- 1st Row: Heading + Paragraph -->
@@ -254,7 +258,7 @@ include "header.php";
               </li>
             </ul>
 
-            <a  href="https://photosbymaicol.as.me/executive" class="btn btn-book">Book Your Experience</a>
+            <a href="https://photosbymaicol.as.me/executive" class="btn btn-book">Book Your Experience</a>
             <div class="bottom-note">Define what you stand for.</div>
           </div>
         </div>
@@ -299,127 +303,11 @@ include "header.php";
       </div>
 
     </div>
-  </section>
- <section class="faq-section">
-    <div class="container px-lg-5 px-3">
+</section>
 
-      <!-- 1st Row: Heading + Paragraph -->
-      <div class="row faq-top">
-        <div class="section-heading">
-            <h2>Questions.<br> <span>Answered. </span></h2>
-            <p>  Everything you need to know before you step in front of the camera.</p>
-        </div>
-
-      </div>
-
-      <!-- 2nd Row / 3rd Row: Accordion in 2 columns -->
-      <div class="row g-lg-5 g-4">
-    
-        <div class="col-lg-12">
-          <div class="accordion faq-accordion" id="faqLeft">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="leftOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeftOne" aria-expanded="true" aria-controls="collapseLeftOne">
-                  I'm not photogenic. Can you still work with me?
-                </button>
-              </h2>
-              <div id="collapseLeftOne" class="accordion-collapse collapse show" data-bs-parent="#faqLeft">
-                <div class="accordion-body">
-                  <div class="faq-line"></div>
-                  <p class="faq-answer">
-                    Photogenic isn't a personality trait. It's not something you're born with. It's a skill set you develop. We find your best angles together. I guide the process, we review in real time, and we keep tightening it until the frame hits. Then we capture you at your best.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="leftTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeftTwo" aria-expanded="false" aria-controls="collapseLeftTwo">
-                  What should I wear for my session?
-                </button>
-              </h2>
-              <div id="collapseLeftTwo" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                <div class="accordion-body">
-                  <div class="faq-line"></div>
-                  <p class="faq-answer">
-                    Bring a few outfit options. We'll review them together and choose what reads strongest on camera for your role and your goals. Fit matters. Fabric matters. The message matters.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="leftThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLeftThree" aria-expanded="false" aria-controls="collapseLeftThree">
-                  How quickly will I get my images?
-                </button>
-              </h2>
-              <div id="collapseLeftThree" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                <div class="accordion-body">
-                  <div class="faq-line"></div>
-                  <p class="faq-answer">
-                    We review your images the same day. Once you make your final selections, the final images are delivered within 5 to 7 business days. Rush options are available.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="rightOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightOne" aria-expanded="false" aria-controls="collapseRightOne">
-                  Why do I need a collection of headshots?
-                </button>
-              </h2>
-              <div id="collapseRightOne" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                <div class="accordion-body">
-                  <div class="faq-line"></div>
-                  <p class="faq-answer">
-                    One image isn't a strategy. It's pedestrian. You need range. Different expressions, different energy for different situations. We build it together, review as we go, and tighten it until every frame hits. It covers how you show up now, and where you're going next.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="rightTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightTwo" aria-expanded="false" aria-controls="collapseRightTwo">
-                  How much retouching do you do?
-                </button>
-              </h2>
-              <div id="collapseRightTwo" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                <div class="accordion-body">
-                  <div class="faq-line"></div>
-                  <p class="faq-answer">
-                    I remove distractions, not character. Blemishes are removed and shadows softened. But the texture remains. Nothing is overdone. You look like you on your best day.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="rightThree">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRightThree" aria-expanded="false" aria-controls="collapseRightThree">
-                  Who is this headshot session for?
-                </button>
-              </h2>
-              <div id="collapseRightThree" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                <div class="accordion-body">
-                  <div class="faq-line"></div>
-                  <p class="faq-answer">
-                    This is for people who know their worth. I work with professionals and talent who are ready to tell their story and move to the next level. Their image needs to match their energy.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
+<?php 
+include 'faq-section.php' 
+ ?>
 
 <section class="contact-section">
     <div class="container">
@@ -454,54 +342,27 @@ include "header.php";
             </h1>
             <p class="hero-subtitle">Tell me what you need. I’ll handle the rest.</p>
 
-            <form id="contactForm" class="needs-validation" novalidate>
-              <div class="mb-3">
-                <input type="text" class="form-control" id="name" name="name" placeholder="Name:" required />
-                <div class="invalid-feedback">Please enter your name.</div>
-              </div>
+           <?php include 'from.php' ?>
 
-              <div class="mb-3">
-                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone Number:" required />
-                <div class="invalid-feedback">Please enter your phone number.</div>
-              </div>
 
-              <div class="mb-3">
-                <input type="email" class="form-control" id="email" name="email" placeholder="Email:" required />
-                <div class="invalid-feedback">Please enter a valid email address.</div>
-              </div>
 
-              <div class="mb-3">
-                <textarea class="form-control" id="message" name="message" placeholder="Message:" required></textarea>
-                <div class="invalid-feedback">Please enter your message.</div>
-              </div>
-
-              <button type="submit" id="submitBtn" class="submit-btn">
-                <span class="loading-spinner"></span>
-                <span class="btn-text">Send</span>
-              </button>
-
-              <div id="statusMessage" class="status-box"></div>
-            </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
 
-  <section class="location-section">
+<section class="location-section">
     <div class="container">
 
       <!-- 1st Row -->
       <div class="row">
         <div class="col-12">
-          <h2 class="section-title">Where to Get Model Headshots in West Palm Beach</h2>
-
-          <p class="section-desc">
-            Maicol Photography is minutes from I-95 and Okeechobee Blvd in West Palm Beach.
-            Models and performers travel from Palm Beach, Palm Beach Gardens, Jupiter,
-            Wellington, Boca Raton, and across South Florida for headshots that book work.
-            Ready to upgrade your portfolio? Show up ready to be remembered.
-          </p>
+          <div class="section-heading">
+            <h2>Where to Get Model Headshots in <span>West Palm Beach </span></h2>
+            <p>  Maicol Photography is minutes from I-95 and Okeechobee Blvd in West Palm Beach. Models and performers travel from Palm Beach, Palm Beach Gardens, Jupiter, Wellington, Boca Raton, and across South Florida for headshots that book work.
+            Ready to upgrade your portfolio? Show up ready to be remembered.</p>
+        </div>
 
           <div class="contact-info">
             <span>
@@ -533,24 +394,11 @@ include "header.php";
       </div>
 
       <!-- 2nd Row -->
-      <div class="row media-box g-4 align-items-stretch">
-        <div class="col-lg-5">
-          <div class="left-card">
-            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80" alt="Studio location">
-            <div class="left-card-bottom">
-              <h4>FREE PARKING</h4>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-7">
+      <div class="row media-box">
+        
+        <div class="col-lg-12">
           <div class="map-box">
-            <iframe
-              src="https://maps.app.goo.gl/xkJHZyovNYfNSDts7"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.35315836176!2d-80.0622186!3d26.7011625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e779fdd8bf1edd%3A0xa1d945eea64b713f!2sMaicol%20Photography!5e0!3m2!1sen!2sbd!4v1772818362236!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
       </div>
@@ -563,42 +411,44 @@ include "header.php";
 
         <div class="col-md-4">
           <ul class="location-list">
-            <li><i class="bi bi-geo-alt-fill"></i> West Palm Beach</li>
-            <li><i class="bi bi-geo-alt-fill"></i> Palm Beach</li>
-            <li><i class="bi bi-geo-alt-fill"></i> Palm Beach Gardens</li>
+            <li><i class="fa-solid fa-location-dot"></i>West Palm Beach</li>
+            <li><i class="fa-solid fa-location-dot"></i> Palm Beach</li>
+            <li><i class="fa-solid fa-location-dot"></i> Palm Beach Gardens</li>
           </ul>
         </div>
 
         <div class="col-md-4">
           <ul class="location-list">
-            <li><i class="bi bi-geo-alt-fill"></i> Jupiter</li>
-            <li><i class="bi bi-geo-alt-fill"></i> Wellington</li>
-            <li><i class="bi bi-geo-alt-fill"></i> Lake Worth</li>
+            <li><i class="fa-solid fa-location-dot"></i> Jupiter</li>
+            <li><i class="fa-solid fa-location-dot"></i> Wellington</li>
+            <li><i class="fa-solid fa-location-dot"></i> Lake Worth</li>
           </ul>
         </div>
 
         <div class="col-md-4">
           <ul class="location-list">
-            <li><i class="bi bi-geo-alt-fill"></i> Boynton Beach</li>
-            <li><i class="bi bi-geo-alt-fill"></i> Delray Beach</li>
-            <li><i class="bi bi-geo-alt-fill"></i> Boca Raton</li>
+            <li><i class="fa-solid fa-location-dot"></i> Boynton Beach</li>
+            <li><i class="fa-solid fa-location-dot"></i> Delray Beach</li>
+            <li><i class="fa-solid fa-location-dot"></i> Boca Raton</li>
           </ul>
         </div>
       </div>
 
     </div>
-  </section>
+</section>
 
 <section class="headshot-section">
     <div class="container">
-      <h2 class="section-title">Explore more headshot experiences.</h2>
-
-      <div class="row g-5">
+      <div class="section-heading">
+            <h2>Explore more headshot  <span>experiences.</span></h2>
+        </div>
+      
+      <div class="row">
         <!-- Column 1 -->
         <div class="col-lg-6 d-flex">
-          <div class="headshot-card w-100">
+          <div class="headshot-card">
             <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=80"
+              src="https://www.maicolphotography.com/wp-content/uploads/2025/07/jessie-baxter-model-headshot-west-palm-beach-maicol-photography.jpg"
               alt="Professional Headshots"
             />
             <h3>Professional Headshots</h3>
@@ -607,16 +457,16 @@ include "header.php";
               their image to match the way they move today.
             </p>
             <div>
-              <a href="#" class="btn btn-custom">Learn More</a>
+              <a href="model.php" class="btn btn-custom">Learn More</a>
             </div>
           </div>
         </div>
 
         <!-- Column 2 -->
         <div class="col-lg-6 d-flex">
-          <div class="headshot-card w-100">
+          <div class="headshot-card">
             <img
-              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+              src="https://www.maicolphotography.com/wp-content/uploads/2025/11/the-experience-douglas-elliman-group-maicol-photography.jpg"
               alt="Corporate Headshots"
             />
             <h3>Corporate Headshots</h3>
@@ -625,13 +475,12 @@ include "header.php";
               seriously as their work.
             </p>
             <div>
-              <a href="#" class="btn btn-custom">View Details</a>
+              <a href="#corporate" class="btn btn-custom">View Details</a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
+</section>
 
-
-  <?php include 'footer.php'; ?>
+<?php include 'footer.php'; ?>

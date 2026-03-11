@@ -1,5 +1,5 @@
-<footer class="site-footer">
-  <div class="container">
+<footer class="site-footer px-5">
+  <div class="container-fluid">
     <div class="row g-4 align-items-start">
 
       <!-- Left: Logo -->
@@ -21,10 +21,11 @@
       <div class="col-lg-3 wow animate__animated animate__fadeInUp">
         <div class="footer-title">Quick Links</div>
         <div class="footer-links">
-          <a href="#">About Me</a><br>
-          <a href="#">Contact Me</a><br>
-          <a href="#">Preparation Guide</a><br>
-          <a href="#">Insight Journal</a>
+          <a href="about-us.php">About Me</a><br>
+          <a href="contact-maico-photography.php">Contact Me</a><br>
+          <a href="preparation-guide-for-women.php">Preparation Guide Women</a><br>
+          <a href="preparation-guide-for-men.php">Preparation Guide Men</a><br>
+          <a href="insight-journal.php">Insight Journal</a>
         </div>
       </div>
 

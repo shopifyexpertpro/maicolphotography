@@ -1,0 +1,299 @@
+
+/* About Us page */
+
+ .about-page-section {
+      background: #272831;
+       display: flex;
+      align-items: center;
+      overflow: hidden;
+      gap:50px;
+    }
+
+    .about-content {
+      color: var(--white);
+      padding:100px;
+      
+    }
+
+    .about-content h1 {
+      margin-bottom: 35px;
+    }
+
+    .about-content h2 {
+       margin-bottom: 10px;
+       color: var(--gold);
+    }
+
+    .about-content h3 {
+       margin-bottom: 35px;
+    }
+
+    .about-content p {
+       line-height: 1.7;
+      
+     
+    }
+
+    .about-image-wrapper {
+      text-align: center;
+    }
+
+    .about-page-image {
+          width: 100%;
+    max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+
+  
+
+    @media (max-width: 991px) {
+      .about-content {
+         padding:50px 20px;
+      
+    }
+
+      .about-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+        text-align: center;
+      }
+
+      
+      .about-image {
+        max-width: 100%;
+      }
+    }
+
+    @media (max-width: 768px) {
+       .about-page-section {
+      flex-direction: column-reverse;
+      gap:20px;
+    }
+
+      .about-content {
+     
+      padding:30px 0px;
+      
+    }
+     
+    }
+
+ /* Experience section */
+    .experience-section {
+  overflow: hidden;
+}
+
+.experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.experience-content {
+  padding:50px 70px;
+  color: var(--navy);
+  text-align: center;
+}
+
+.experience-content h2 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.experience-content p {
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.experience-content span {
+  color: var(--gold)
+}
+.experience-image-two {
+  padding-left: 50px;
+}
+.experience-image-two img {
+  width: 100%;
+  height: auto;
+}
+
+.story-section .experience-content-left {
+text-align: left;
+color: var(--navy);
+ padding:50px 70px;
+}
+
+.story-section .experience-content-left h2 {
+text-align: left;
+}
+
+.story-section .autor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding:30px 0px;
+}
+.story-section .autor img {
+   width: 100px;
+   height: auto;
+   object-fit: cover;
+}
+.story-section .autor-instagram {
+  margin:30px 0px;
+}
+.story-section .autor-instagram img {
+   width: 50px;
+   height: auto;
+   object-fit: cover;
+}
+
+@media (max-width: 991px) {
+
+  .experience-content {
+    padding:30px 20px;
+  }
+
+ 
+  .experience-image img {
+    min-height: 350px;
+  }
+
+}
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+@media (max-width: 768px) {
+
+  .experience-content {
+    padding:25px 10px;
+  }
+
+ .story-section .experience-content-left {
+text-align: left;
+color: var(--navy);
+ padding:25px 20px;
+}
+
+  .experience-image img {
+    height: auto;
+  }
+  .experience-image-two {
+  padding-left:0px;
+}
+
+
+}
+
+
+/* award section */
+.awards-section {
+  background:var(--snow);
+  padding: 80px 0;
+}
+
+.award-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.award-item img {
+  width: 260px;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  max-width: 100%;
+}
+
+.award-item a:hover img {
+  transform: translateY(-6px);
+}
+
+.award-item:hover img {
+  transform: translateY(-6px);
+}
+
+@media (max-width: 991px) {
+  .awards-section {
+    padding: 60px 0;
+  }
+
+  .award-item img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 575px) {
+  .awards-section {
+    padding: 50px 0;
+  }
+
+  .award-item {
+    padding: 15px;
+  }
+
+  .award-item img {
+    max-width: 180px;
+  }
+}
+
+.cta-section{
+  position: relative;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.cta-bg{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.cta-overlay{
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 2;
+}
+
+.cta-section .container{
+  position: relative;
+  z-index: 3;
+}
+
+.cta-box {
+  background: #ffffff;
+  padding: 45px 40px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+}
+
+.cta-box p {
+  color: var(--navy);
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+  background: var(--navy);
+  color: #fff;
+  padding: 14px 34px;
+  border-radius: 5px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: var(--gold);
+  color: var(--navy);;
+}
+
