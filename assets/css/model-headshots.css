@@ -63,6 +63,7 @@ font-size:30px;
 .brand-section{
 padding:100px 0;
 background:var(--white);
+overflow: hidden;
 }
 
 
@@ -111,7 +112,7 @@ letter-spacing:.5px;
 
 .brand-images{
 display:grid;
-grid-template-columns:.7fr 1.7fr;
+grid-template-columns:.5fr 1.8fr;
 gap:20px;
 align-items:stretch;
 }
@@ -132,7 +133,7 @@ display:block;
 .side-images{
 display:grid;
 grid-template-rows:repeat(3,1fr);
-gap:20px;
+gap:10px;
 }
 
 .side-images img{

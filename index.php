@@ -120,30 +120,42 @@ include "header.php";
         </div>
 
      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 gx-4 gy-4" id="gallery">
-<?php
-$images = [
-    "mary-paul-editor-palm-beach-post-maicol-photography.jpg",
-    "mckenna-west-planning-project-manager-headshot-west-palm-beach-maicol-photography.webp"
-];
+      <?php
+      $images = [
+          "mary-paul-editor-palm-beach-post-maicol-photography.jpg",
+          "gavin-guinan-executive-headshot-west-palm-beach-maicol-photography.webp",
+          "cristeta-comerford-chef-headshot-west-palm-beach-maicol-photography.webp",
+          "josh-remillard-executive-headshot-palm-beach-gardens-maicol-photography.webp",
+          "adiana-nicodinescu-luxury-rental-headshot-west-palm-beach-maicol-photography.webp",
+          "robert-sherman-professional-headshot-west-palm-beach.webp",
+          "mckenna-west-planning-project-manager-headshot-west-palm-beach-maicol-photography.webp",
+          "seth-dillon-ceo-babylon-bee-headshot-west-palm-beach-maicol-photography.webp",
+          "vicki-belleus-professional-headshots-west-palm-beach-maicol-photography.webp",
+          "victor-ramos-professional-headshot-west-palm-beach-maicol-photography.jpg"
+      ];
 
-function studio_headshots_photography_alt($filename) {
-    $name = pathinfo($filename, PATHINFO_FILENAME);
-    $name = str_replace(['-', '_'], ' ', $name);
-    return ucwords($name);
-}
+      $url = "assets/img/professional/images/";
 
-foreach ($images as $index => $img) {
 
-    $filename = basename($img);
-    $name = studio_headshots_photography_alt($filename);
-    $itemDelay = number_format((($index % 5) * 0.1), 1);
-?>
-    <div class="col gallery-item wow animate__animated animate__zoomInUp" data-wow-delay="<?= $itemDelay ?>s">
-        <img src="assets/img/professional/images/<?= $img ?>" class="img-fluid" alt="<?= $name ?>">
-        <p class="text-center mt-2 small"><?= $name ?></p>
-    </div>
-<?php } ?>
-</div>
+
+      function studio_headshots_photography_alt($filename) {
+          $name = pathinfo($filename, PATHINFO_FILENAME);
+          $name = str_replace(['-', '_'], ' ', $name);
+          return ucwords($name);
+      }
+
+      foreach ($images as $index => $img) {
+
+          $filename = basename($img);
+          $name = studio_headshots_photography_alt($filename);
+          $itemDelay = number_format((($index % 5) * 0.1), 1);
+      ?>
+          <div class="col gallery-item wow animate__animated animate__zoomInUp" data-wow-delay="<?= $itemDelay ?>s">
+              <img src="<?php echo $url ?><?= $img ?>" class="img-fluid" alt="<?= $name ?>">
+              <p class="text-center mt-2 small"><?= $name ?></p>
+          </div>
+      <?php } ?>
+      </div>
 
     </div>
 </section>
@@ -212,102 +224,31 @@ foreach ($images as $index => $img) {
 
 </section>
 
-<section class="pricing-section wow animate__animated animate__fadeInUp" data-wow-duration="1s" id="booking">
-    <div class="container">
-
-      <!-- 1st Row: Heading + Paragraph -->
-      <div class="row">
-        <div class="section-heading">
-            <h2>You've moved on.<br> <span>Your headshot should too. </span></h2>
-            <p> rowth changes how you show up. Your headshot should keep up.</p>
-        </div>
-      </div>
-
-      <!-- 2nd Row: 2 Columns -->
-      <div class="row pricing-wrap g-0">
-        <div class="col-lg-6">
-          <div class="pricing-card left-card">
-            <div class="plan-label">Elevated</div>
-            <h2 class="plan-title">Your Presence</h2>
-            <div class="plan-subtitle">The Executive Session</div>
-
-            <div class="price">
-              <span class="currency">$</span><span class="amount">695</span>
-            </div>
-
-            <ul class="feature-list">
-              <li>
-                <strong>The Strategy:</strong>
-                <span>Pre-session consultation to define your executive presence and visual goals.</span>
-              </li>
-              <li>
-                <strong>The Session:</strong>
-                <span>Three hours of in-studio photography at West Palm Beach.</span>
-              </li>
-              <li>
-                <strong>The Range:</strong>
-                <span>Three to five looks with professional direction throughout.</span>
-              </li>
-              <li>
-                <strong>The Service:</strong>
-                <span>Immediate on-site image selection following the shoot.</span>
-              </li>
-              <li>
-                <strong>The Selection:</strong>
-                <span>Three retouched images included. Additional images at $100 each.</span>
-              </li>
-            </ul>
-
-            <a href="https://photosbymaicol.as.me/executive" class="btn btn-book">Book Your Experience</a>
-            <div class="bottom-note">Define what you stand for.</div>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="pricing-card right-card">
-            <div class="plan-label">Entry</div>
-            <h2 class="plan-title">Your Identity</h2>
-            <div class="plan-subtitle">The Modern Headshot</div>
-
-            <div class="price">
-              <span class="currency">$</span><span class="amount">275</span>
-            </div>
-
-           <ul class="feature-list">
-              <li>
-                <strong>The Strategy:</strong>
-                <span>Comprehensive prep guide to define look and tone.</span>
-              </li>
-              <li>
-                <strong>The Session:</strong>
-                <span>One hour of in-studio photography at West Palm Beach.</span>
-              </li>
-              <li>
-                <strong>The Range:</strong>
-                <span>Up to two outfit changes with guided posing during the session.</span>
-              </li>
-              <li>
-                <strong>The Service:</strong>
-                <span>Immediate on-site image selection following the shoot.</span>
-              </li>
-              <li>
-                <strong>The Selection:</strong>
-                <span>Images purchased individually at $100 per image.</span>
-              </li>
-            </ul>
-
-            <a href="https://photosbymaicol.as.me/modern" class="btn btn-book">Book Your Experience</a>
-            <div class="bottom-note">Tell them who you are.</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-</section>
+<?php 
+include 'product.php' 
+ ?>
 
 <?php 
 include 'faq-section.php' 
  ?>
+<section class="ready-section">
+  <div class="container-fluid">
+    <div class="ready-box">
+      <div class="row align-items-center">
+        <div class="col-lg-8 col-md-7">
+          <div class="ready-content">
+            <span class="ready-label">READY TO BEGIN</span>
+            <h2>Your image should match who you are today.</h2>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-5 text-md-end text-start mt-4 mt-md-0">
+          <a href="#booking" class="ready-btn">BOOK YOUR EXPERIENCE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="contact-section">
     <div class="container">
@@ -405,34 +346,73 @@ include 'faq-section.php'
 
       <!-- 3rd Row -->
       <div class="row">
-        <div class="col-12">
-          <h3 class="locations-title">Model Headshots In Palm Beach County And Beyond</h3>
-        </div>
+  <div class="col-12">
+    <h3 class="locations-title">Serving professionals across Palm Beach County</h3>
+  </div>
 
-        <div class="col-md-4">
-          <ul class="location-list">
-            <li><i class="fa-solid fa-location-dot"></i>West Palm Beach</li>
-            <li><i class="fa-solid fa-location-dot"></i> Palm Beach</li>
-            <li><i class="fa-solid fa-location-dot"></i> Palm Beach Gardens</li>
-          </ul>
-        </div>
+  <div class="col-md-4">
+    <ul class="location-list">
+      <li>
+        <a href="">
+          <i class="fa-solid fa-location-dot"></i> West Palm Beach
+        </a>
+      </li>
+      <li>
+        <a href="index.php">
+          <i class="fa-solid fa-location-dot"></i> Palm Beach
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-location-dot"></i> Palm Beach Gardens
+        </a>
+      </li>
+    </ul>
+  </div>
 
-        <div class="col-md-4">
-          <ul class="location-list">
-            <li><i class="fa-solid fa-location-dot"></i> Jupiter</li>
-            <li><i class="fa-solid fa-location-dot"></i> Wellington</li>
-            <li><i class="fa-solid fa-location-dot"></i> Lake Worth</li>
-          </ul>
-        </div>
+  <div class="col-md-4">
+    <ul class="location-list">
+      <li>
+        <a href="">
+          <i class="fa-solid fa-location-dot"></i> Boca raton
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-location-dot"></i> Jupiter
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-location-dot"></i> Wellington
+        </a>
+      </li>
+      
+    </ul>
+  </div>
 
-        <div class="col-md-4">
-          <ul class="location-list">
-            <li><i class="fa-solid fa-location-dot"></i> Boynton Beach</li>
-            <li><i class="fa-solid fa-location-dot"></i> Delray Beach</li>
-            <li><i class="fa-solid fa-location-dot"></i> Boca Raton</li>
-          </ul>
-        </div>
-      </div>
+  <div class="col-md-4">
+    <ul class="location-list">
+      <li>
+        <a href="index.php">
+          <i class="fa-solid fa-location-dot"></i> Delray Beach
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-location-dot"></i> Royal Palm Beach
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <i class="fa-solid fa-location-dot"></i> Boynton Beach
+        </a>
+      </li>
+      
+      
+    </ul>
+  </div>
+</div>
 
     </div>
 </section>
@@ -448,16 +428,15 @@ include 'faq-section.php'
         <div class="col-lg-6 d-flex">
           <div class="headshot-card">
             <img
-              src="https://www.maicolphotography.com/wp-content/uploads/2025/07/jessie-baxter-model-headshot-west-palm-beach-maicol-photography.jpg"
+              src="assets/img/jessie-baxter-model-headshot-west-palm-beach-maicol-photography.webp"
               alt="Professional Headshots"
             />
-            <h3>Professional Headshots</h3>
+            <h3><a href="model-headshots.php">Model Headshots</a></h3>
             <p>
-              Headshots for executives, entrepreneurs, and professionals who want
-              their image to match the way they move today.
+             Editorial and commercial portfolios for talent who need images that belong in bigger markets.
             </p>
             <div>
-              <a href="model.php" class="btn btn-custom">Learn More</a>
+              <a href="model-headshots.php" class="btn btn-custom">Learn More</a>
             </div>
           </div>
         </div>
@@ -466,16 +445,16 @@ include 'faq-section.php'
         <div class="col-lg-6 d-flex">
           <div class="headshot-card">
             <img
-              src="https://www.maicolphotography.com/wp-content/uploads/2025/11/the-experience-douglas-elliman-group-maicol-photography.jpg"
+              src="assets/img/the-experience-douglas-elliman-group-maicol-photography.webp"
               alt="Corporate Headshots"
             />
-            <h3>Corporate Headshots</h3>
+            <h3><a href="corporate-headshots.php">Corporate Headshots</a></h3>
             <p>
               Headshots for companies, firms, and teams who take their image as
               seriously as their work.
             </p>
             <div>
-              <a href="#corporate" class="btn btn-custom">View Details</a>
+              <a href="corporate-headshots.php" class="btn btn-custom">Learn More</a>
             </div>
           </div>
         </div>

@@ -1,10 +1,10 @@
 <?php
 $studio_headshots_photography_images = [
-    "sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp",
-    "sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp",
-    "sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp",
-    "sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp",
-    "sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp"
+    "sanchellexo-model-portrait-soft-smile-afro-west-palm-beach-maicol-photography.webp",
+    "sanchellexo-model-portrait-framing-afro-green-blouse-west-palm-beach-maicol-photography.webp",
+    "sanchellexo-model-headshot-afro-hands-up-west-palm-beach-maicol-photography.webp",
+    "sanchellexo-model-smiling-portrait-side-angle-afro-west-palm-beach-maicol-photography.webp",
+    "sanchellexo-studio-headshot-afro-green-blouse-west-palm-beach-maicol-photography.webp"
 ];
 
 function studio_headshots_photography_alt($filename) {
@@ -16,7 +16,7 @@ function studio_headshots_photography_alt($filename) {
 
 
 
-<section id="studio-headshots-photography" class="studio-headshots-photography-section container-fluid px-0">
+<section id="studio-headshots-photography" class="studio-headshots-photography-section px-0">
     <div class="container-fluid px-0">
         
         <!-- First Row: Heading Only -->
@@ -24,13 +24,14 @@ function studio_headshots_photography_alt($filename) {
             <div class="col-12">
                 <div class="section-heading text-center py-5">
                     <h2>Model Portfolio Photography  <span>South Florida </span></h2>
-                    <p>Modern professional portraits designed for executives, founders, and personal branding.</p>
+                    <p>Your headshots need to show range. One look does not book you.<br>
+Together, we create a set that shows how you move so every frame feels like you and reads for the roles you actually want.</p>
                 </div>
             </div>
         </div>
 
         <!-- Second Row: Gallery -->
-        <div class="row row-cols-5 g-0 studio-headshots-photography-gallery">
+        <div class="row row-cols-5 g-4 studio-headshots-photography-gallery">
             <?php foreach ($studio_headshots_photography_images as $index => $image): ?>
                 <div class="col">
                     <div 
@@ -40,7 +41,7 @@ function studio_headshots_photography_alt($filename) {
                         data-slide-to="<?php echo $index; ?>"
                     >
                         <img 
-                            src="assets/img/model-headshots/<?php echo $image; ?>" 
+                            src="assets/img/model-headshots/gallery-2/<?php echo $image; ?>" 
                             alt="<?php echo studio_headshots_photography_alt($image); ?>" 
                             class="img-fluid w-100"
                         >
@@ -51,7 +52,7 @@ function studio_headshots_photography_alt($filename) {
                 </div>
             <?php endforeach; ?>
         </div>
-         <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p>
+         <!-- <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p> -->
 
     </div>
 </section>
@@ -92,7 +93,7 @@ function studio_headshots_photography_alt($filename) {
     width: 100%;
     background: #fff;
     overflow: hidden;
-    padding:100px 0px;
+   
 }
 
 

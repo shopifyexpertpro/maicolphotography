@@ -57,16 +57,17 @@ include "header.php";
 
 
  <section class="gallery-section">
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="section-logo">
             <img src="assets/img/corporate-headshots/clc-law-firm-logo-west-palm-beach-florida.webp" alt="Corporate Headshots in West Palm Beach"   loading="lazy">
         </div>
 
-        <div class="row" id="gallery">
+        <div class="row g-2 row-cols-5" id="gallery">
             <?php
 
             $images = glob("assets/img/corporate-headshots/CLC/*.{jpg,jpeg,png,webp}", GLOB_BRACE);
+            sort($images); // sort by filename
             $images = array_slice($images, 0, 6); // only first 6 images
 
             foreach($images as $img){
@@ -74,7 +75,7 @@ include "header.php";
             $filename = basename($img);
             $alt = ucwords(str_replace('-', ' ', pathinfo($filename, PATHINFO_FILENAME)));
 
-            echo '<div class="col-6 col-md-3 col-lg-4 gallery-item wow animate__animated animate__zoomInUp">';
+            echo '<div class=" gallery-item wow animate__animated animate__zoomInUp">';
             echo '<img src="'.$img.'" alt="'.$alt.'">';
             echo '</div>';
 
@@ -82,22 +83,23 @@ include "header.php";
 
             ?>
         </div>
-        <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p>
+        <!-- <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p> -->
 
     </div>
 </section>
 
  <section class="gallery-section">
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="section-logo">
             <img src="assets/img/corporate-headshots/woodline-partners-logo-florida.png" alt="Corporate Headshots in West Palm Beach"   loading="lazy">
         </div>
 
-        <div class="row row-cols-5" id="gallery">
+        <div class="row g-2 row-cols-5" id="gallery">
             <?php
 
             $images = glob("assets/img/corporate-headshots/woodline/*.{jpg,jpeg,png,webp}", GLOB_BRACE);
+            sort($images); // sort by filename
             $images = array_slice($images, 0, 5); // only first 6 images
 
             foreach($images as $img){
@@ -113,22 +115,23 @@ include "header.php";
 
             ?>
         </div>
-        <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p>
+        <!-- <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p> -->
 
     </div>
 </section>
 
  <section class="gallery-section">
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="section-logo">
             <img src="assets/img/corporate-headshots/calypso-logo-fort-lauderdale.webp" alt="Corporate Headshots in West Palm Beach"   loading="lazy">
         </div>
 
-        <div class="row " id="gallery">
+        <div class="row g-4 cols-lg-5" id="gallery">
             <?php
 
             $images = glob("assets/img/corporate-headshots/calpso/*.{jpg,jpeg,png,webp}", GLOB_BRACE);
+            sort($images); // sort by filename
             $images = array_slice($images, 0, 8); // only first 6 images
 
             foreach($images as $img){
@@ -144,7 +147,7 @@ include "header.php";
 
             ?>
         </div>
-        <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p>
+        <!-- <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p> -->
 
     </div>
 </section>
@@ -269,7 +272,7 @@ include "header.php";
               Editorial and commercial portfolios for talent who need images that belong in bigger markets.
             </p>
             <div>
-              <a href="#corporate-headshots.php" class="btn btn-custom">View Details</a>
+              <a href="#corporate-headshots.php" class="btn btn-custom">Learn More</a>
             </div>
           </div>
         </div>

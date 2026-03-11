@@ -162,7 +162,7 @@ function esc_attr($str) {
 
       <!-- DESKTOP CTA -->
       <a class="cta-btn-header  maicol-cta d-none d-lg-inline-flex"
-         href="https://www.maicolphotography.com/#booking">
+         href="#booking">
         Book Your Experience
       </a>
 

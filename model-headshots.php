@@ -25,8 +25,8 @@ include "header.php";
 <section class="about-section wow fadeInUp">
     <div class="container">
         <div class="row">
-            <h1 class="main-title">Does your headshot get you booked or keep you off the list?</h1>
-            <h3 class="sub-title">Model Headshots in West Palm Beach</h3>
+            <h3 class="main-title">Does your headshot get you booked or keep you off the list?</h3>
+            <h1 class="sub-title">Model Headshots in West Palm Beach</h1>
             <div class="button_cta">
                 <a href="#booking">SCHEDULE YOUR EXPERIENCE</a>
             </div>
@@ -50,26 +50,43 @@ include "header.php";
             <p>You spend time curating your look for casting directors. Does your headshot keep up with who you are today, or does it feel pedestrian?</p>
         </div>
 
-        <div class="row" id="gallery">
-            <?php
+        <div class="row g-4" id="gallery">
+           <?php
+      $images2 = [
+          "amone-bane-entertainer-headshot-west-palm-beach-maicol-photography.jpg",
+          "b-makeup-artist-headshot-west-palm-beach-maicol-photography.webp",
+          "daniel-martinez-model-headshot-orlando-maicol-photography.jpg",
+          "claudia-fernandes-model-headshot-west-palm-beach-maicol-photography-claudia-fernandes.webp",
+          "claire-boutte-dancer-headshot-west-palm-beach-maicol-photography.jpg",
+          "sebastian-torna-muscian-headshots-west-palm-beach-maicol-photography.webp",
+          "yoga-model-heashot-west-palm-beach-maicol-photography.webp",
+          "jt-stockman-comedian-headshot-fortlauderdale-maicol-photography.webp",
+          
+      ];
 
-            $images = glob("assets/img/model-headshots/gallery/*.{jpg,jpeg,png,webp}", GLOB_BRACE);
-            $images = array_slice($images, 0, 8); // only first 8 images
+      $url = "assets/img/model-headshots/gallery/";
 
-            foreach($images as $img){
 
-            $filename = basename($img);
-            $alt = ucwords(str_replace('-', ' ', pathinfo($filename, PATHINFO_FILENAME)));
 
-            echo '<div class="col-6 col-md-3 col-lg-3 gallery-item wow animate__animated animate__zoomInUp">';
-            echo '<img src="'.$img.'" alt="'.$alt.'">';
-            echo '</div>';
+      function studio_headshot($filename) {
+          $name = pathinfo($filename, PATHINFO_FILENAME);
+          $name = str_replace(['-', '_'], ' ', $name);
+          return ucwords($name);
+      }
 
-            }
+      foreach ($images2 as $index => $img) {
 
-            ?>
+          $filename = basename($img);
+          $name = studio_headshot($filename);
+          $itemDelay = number_format((($index % 5) * 0.1), 1);
+      ?>
+          <div class="col col-md-2 col-lg-3 gallery-item wow animate__animated animate__zoomInUp" data-wow-delay="<?= $itemDelay ?>s">
+              <img src="<?php echo $url ?><?= $img ?>" class="img-fluid" alt="<?= $name ?>">
+              <p class="text-center mt-2 small"><?= $name ?></p>
+          </div>
+      <?php } ?>
         </div>
-        <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p>
+        <!-- <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p> -->
 
     </div>
 </section>
@@ -113,8 +130,8 @@ include "header.php";
 
         <div class="side-images">
           <img src="assets/img/model-headshots/sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp" alt="Capture Your Confidence">
-          <img src="assets/img/model-headshots/sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp" alt="Capture Your Confidence">
-          <img src="assets/img/model-headshots/sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp" alt="Capture Your Confidence">
+          <img src="assets/img/model-headshots/gallery-2/sanchellexo-model-portrait-framing-afro-green-blouse-west-palm-beach-maicol-photography.webp" alt="Capture Your Confidence">
+          <img src="assets/img/model-headshots/gallery-2/sanchellexo-studio-headshot-afro-green-blouse-west-palm-beach-maicol-photography.webp" alt="Capture Your Confidence">
         </div>
 
         <div class="main-image">
@@ -179,11 +196,13 @@ include 'slider.php'
 
   </div>
 
-   <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p>
+   <!-- <p class="small-text">photographed by Maicol Osorio from Maicol Photography</p> -->
 
 
 </section>
-
+<?php 
+include 'product.php' 
+ ?>
 <section class="contact-section">
     <div class="container">
       <div class="row align-items-center g-5">
