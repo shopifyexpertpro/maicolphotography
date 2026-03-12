@@ -43,7 +43,7 @@ include "header.php";
 
 
  <section class="gallery-section">
-    <div class="container-fluid">
+    <div class="container">
 
         <div class="section-heading">
             <h2>The Faces of  <span>West Palm Beach Talent </span></h2>
@@ -54,7 +54,7 @@ include "header.php";
            <?php
       $images2 = [
           "amone-bane-entertainer-headshot-west-palm-beach-maicol-photography.jpg",
-          "b-makeup-artist-headshot-west-palm-beach-maicol-photography.webp",
+          "makeup-artist-headshot-west-palm-beach-maicol-photography.webp",
           "daniel-martinez-model-headshot-orlando-maicol-photography.jpg",
           "claudia-fernandes-model-headshot-west-palm-beach-maicol-photography-claudia-fernandes.webp",
           "claire-boutte-dancer-headshot-west-palm-beach-maicol-photography.jpg",
@@ -288,7 +288,7 @@ include 'product.php'
       <!-- 2nd Row -->
       <div class="row media-box g-4 align-items-stretch">
         <div class="col-lg-5">
-          <div class="left-card">
+          <div class="left-card" style="background:var(--navy)">
             <img src="https://www.maicolphotography.com/wp-content/uploads/2024/05/TheStudio1016.jpeg" alt="Studio location">
             <div class="left-card-bottom">
               <h4>FREE PARKING</h4>
@@ -298,8 +298,15 @@ include 'product.php'
 
         <div class="col-lg-7">
           <div class="map-box">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.35315836176!2d-80.0622186!3d26.7011625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e779fdd8bf1edd%3A0xa1d945eea64b713f!2sMaicol%20Photography!5e0!3m2!1sen!2sbd!4v1772818362236!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+          <iframe
+            src="https://www.google.com/maps?q=Maicol+Photography,West+Palm+Beach&z=19&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
         </div>
       </div>
 

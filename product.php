@@ -28,7 +28,7 @@
               </li>
               <li>
                 <strong>The Session:</strong>
-                <span>Three hours of in-studio photography at West Palm Beach.</span>
+                <span>Two hours of in-studio photography at West Palm Beach.</span>
               </li>
               <li>
                 <strong>The Range:</strong>

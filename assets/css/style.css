@@ -44,7 +44,9 @@ p {
   font-weight: 400;
   line-height: 30px;
 }
-
+a {
+  font-family: "Montserrat", sans-serif;
+}
 section {
   padding: 100px 0;
 }
@@ -62,16 +64,16 @@ section {
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 35px;
     line-height: 50px;
   }
 
   h2 {
-    font-size: 32px;
+    font-size:28px;
   }
 
   h3 {
-    font-size: 25px;
+    font-size: 22px;
     line-height: 40px;
   }
 
@@ -85,13 +87,33 @@ section {
    HEADER
 ========================= */
 .site-header {
-  position: relative;
-  padding: 30px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  padding: 0;
   background: var(--navy);
+  transition: all 0.35s ease;
+}
+.site-header.sticky .contact-row {
+  max-height: 0;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  opacity: 0;
+}
+
+.contact-row {
+  max-height: 80px;
+  overflow: hidden;
+  opacity: 1;
+  transition: all 0.35s ease;
 }
 
 .site-header .navbar {
-  padding: 35px 0;
+  padding: 50px 20px 50px;
+  transition: all 0.35s ease;
 }
 
 .contact-row {
@@ -102,6 +124,7 @@ section {
   padding: 10px 50px;
   color: var(--navy);
   background-color: var(--gold);
+  transition: all 0.35s ease;
 }
 
 .contact-item {
@@ -122,7 +145,7 @@ section {
 }
 
 .contact-item a {
-  color: #fff;
+  color: var(--navy);
   text-decoration: none;
 }
 
@@ -134,8 +157,9 @@ section {
    LOGO
 ========================= */
 .brand-logo {
-  width: 150px;
+  width: 120px;
   height: auto;
+  transition: all 0.35s ease;
 }
 
 /* =========================
@@ -171,7 +195,7 @@ section {
 .main-menu a {
   padding: 6px 0;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 300;
   color: var(--white);
   text-decoration: none;
   text-transform: uppercase;
@@ -189,10 +213,6 @@ section {
   text-underline-offset: 6px;
 }
 
-.main-menu .cta-btn {
-  color: var(--navy);
-}
-
 /* =========================
    CTA BUTTON
 ========================= */
@@ -206,6 +226,7 @@ section {
   letter-spacing: 0.4px;
   background: var(--white);
   border-radius: 5px;
+  transition: all 0.35s ease;
 }
 
 .cta-btn-header:hover {
@@ -256,7 +277,7 @@ section {
 ========================= */
 @media (max-width: 768px) {
   .site-header {
-    padding: 10px 15px;
+    padding: 0;
   }
 
   .site-header .navbar {
@@ -266,7 +287,7 @@ section {
   .contact-row {
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 12px;
     padding: 10px 20px;
   }
 
@@ -289,33 +310,56 @@ section {
   }
 
   .main-menu a,
-  .cta-btn {
+  .cta-btn-header {
     display: block;
     width: 100%;
     text-align: center;
   }
+}
 
-  .cta-btn {
-    color: #0b1b2a;
+/* =========================
+   STICKY ACTIVE
+========================= */
+.site-header.sticky {
+  background: rgba(7, 28, 47, 0.96);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: slideDown 0.4s ease;
+}
+
+.site-header.sticky .contact-row {
+  padding: 0px 50px;
+}
+
+.site-header.sticky .navbar {
+  padding: 28px 20px 28px;
+}
+
+.site-header.sticky .brand-logo {
+  width: 95px;
+}
+
+.site-header.sticky .cta-btn-header {
+  padding: 10px 16px;
+  font-size: 12px;
+  color:var(--navy);
+}
+
+/* =========================
+   BODY OFFSET
+========================= */
+body {
+  padding-top: 160px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 220px;
   }
 }
 
 /* =========================
-   STICKY HEADER
+   ANIMATION
 ========================= */
-.site-header.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  background: var(--navy);
-}
-
-.site-header.sticky .maicol-navbar {
-  position: relative;
-}
-
 @keyframes slideDown {
   from {
     transform: translateY(-100%);
@@ -324,7 +368,6 @@ section {
     transform: translateY(0);
   }
 }
-
 /* =========================
    HERO SECTION
 ========================= */
@@ -375,7 +418,7 @@ section {
   padding: 18px 48px;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   color: var(--snow);
   text-decoration: none;
   text-transform: uppercase;
@@ -622,6 +665,22 @@ section {
 /* =========================
    GALLERY SECTION
 ========================= */
+#gallery {
+  margin-left: -2.5px;
+  margin-right: -2.5px;
+}
+
+#gallery > .gallery-item {
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+  margin-bottom: 5px;
+}
+
+#gallery img {
+  width: 100%;
+  display: block;
+}
+
 .section-heading {
   display: flex;
   flex-direction: column;
@@ -1559,7 +1618,7 @@ textarea.form-control:focus {
 .footer-title {
   margin-bottom: 16px;
   font-size: 22px;
-  font-weight: 800;
+  font-weight:500;
 }
 
 .footer-links a,
@@ -1687,3 +1746,5 @@ textarea.form-control:focus {
     padding: 12px 20px;
   }
 }
+
+

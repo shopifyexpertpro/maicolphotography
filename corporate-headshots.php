@@ -8,30 +8,46 @@ $page_type = "website";
 include "header.php";
 ?>
 
-<section class="model-hero-section">
-    <div class="image_contaner">
+<section class="corporate-hero-section">
+  <div class="container">
+    <div class="row g-5 align-items-center flex-column-reverse flex-lg-row">
+      <div class="col-md-6">
+        <div class="heading">
+        <h1>Corporate Headshots in <span>West Palm Beach</span></h1>
+        <p>Your team is the brand. Let them look like it.</p>
+    </div>
+      </div>
+      <div class="col-md-6">
+        <div class="image-contaner">
        <img src="assets/img/corporate-headshots/the-starboard-group-maicol-photography.webp"
      alt="You are the brand. Let them see it"
      loading="lazy">
     </div>
-
-    <div class="hero-heading" style="color:var(--navy">
-        <h1>Corporate Headshots in <span>West Palm Beach</span></h1>
-        <p>Your team is the brand. Let them look like it.</p>
+      </div>
     </div>
+  </div>
 </section>
 
 <section class="infinity-slider">
+  <div class="container">
+     <h3 class="main-title">Brands that invest in how their people are seen.</h3>
+  </div>
     <div class="slider">
   <div class="slide-track">
-    <img src="assets/img/corporate-headshots/clc-law-firm-logo-west-palm-beach-florida.webp" alt="">
-    <img src="assets/img/corporate-headshots/woodline-partners-logo-florida.png" alt="">
-    <img src="assets/img/corporate-headshots/calypso-logo-fort-lauderdale.webp" alt="">
+    <img src="assets/img/corporate-headshots/Fidelity-footer-logo.webp" alt="Fidelity Investments logo, investment firm team headshots client in Florida photographed by Maicol Photography">
+    <img src="assets/img/corporate-headshots/douglas-elliman-logo-florida.webp" alt="Douglas Elliman logo, luxury real estate team headshots client in Florida photographed by Maicol Photography">
+    <img src="assets/img/corporate-headshots/fox-rothschild-law-firm-logo.webp" alt="Fox Rothschild law firm logo, corporate headshots client photographed by Maicol Photography">
+     <img src="assets/img/corporate-headshots/nai-global-logo.webp" alt="NAI Global logo, commercial real estate team headshots client photographed by Maicol Photography">
+      <img src="assets/img/corporate-headshots/vault-insurance-logo.webp" alt="Vault Insurance logo, corporate headshots client in Florida photographed by Maicol Photography">
+       <img src="assets/img/corporate-headshots/wm-partners-logo-aventura-miami.webp" alt="WM Partners logo, private equity team headshots client in Aventura Miami photographed by Maicol Photography">
 
     <!-- duplicate for infinite effect -->
-    <img src="assets/img/corporate-headshots/clc-law-firm-logo-west-palm-beach-florida.webp" alt="">
-    <img src="assets/img/corporate-headshots/woodline-partners-logo-florida.png" alt="">
-    <img src="assets/img/corporate-headshots/calypso-logo-fort-lauderdale.webp" alt="">
+   <img src="assets/img/corporate-headshots/Fidelity-footer-logo.webp" alt="Fidelity Investments logo, investment firm team headshots client in Florida photographed by Maicol Photography">
+    <img src="assets/img/corporate-headshots/douglas-elliman-logo-florida.webp" alt="Douglas Elliman logo, luxury real estate team headshots client in Florida photographed by Maicol Photography">
+    <img src="assets/img/corporate-headshots/fox-rothschild-law-firm-logo.webp" alt="Fox Rothschild law firm logo, corporate headshots client photographed by Maicol Photography">
+     <img src="assets/img/corporate-headshots/nai-global-logo.webp" alt="NAI Global logo, commercial real estate team headshots client photographed by Maicol Photography">
+      <img src="assets/img/corporate-headshots/vault-insurance-logo.webp" alt="Vault Insurance logo, corporate headshots client in Florida photographed by Maicol Photography">
+       <img src="assets/img/corporate-headshots/wm-partners-logo-aventura-miami.webp" alt="WM Partners logo, private equity team headshots client in Aventura Miami photographed by Maicol Photography">
   </div>
 </div>
 </section>
@@ -39,7 +55,6 @@ include "header.php";
 <section class="about-section wow fadeInUp">
     <div class="container-fluid">
         <div class="row">
-            <h1 class="main-title">Brands that invest in how their people are seen.</h1>
             <h3 class="sub-title">Corporate Headshots in West Palm Beach</h3>
             
             <div class="button_cta">
@@ -63,7 +78,7 @@ include "header.php";
             <img src="assets/img/corporate-headshots/clc-law-firm-logo-west-palm-beach-florida.webp" alt="Corporate Headshots in West Palm Beach"   loading="lazy">
         </div>
 
-        <div class="row g-2 row-cols-5" id="gallery">
+        <div class="row " id="gallery">
             <?php
 
             $images = glob("assets/img/corporate-headshots/CLC/*.{jpg,jpeg,png,webp}", GLOB_BRACE);
@@ -75,7 +90,7 @@ include "header.php";
             $filename = basename($img);
             $alt = ucwords(str_replace('-', ' ', pathinfo($filename, PATHINFO_FILENAME)));
 
-            echo '<div class=" gallery-item wow animate__animated animate__zoomInUp">';
+            echo '<div class="col-lg-4 gallery-item wow animate__animated animate__zoomInUp">';
             echo '<img src="'.$img.'" alt="'.$alt.'">';
             echo '</div>';
 
@@ -95,7 +110,7 @@ include "header.php";
             <img src="assets/img/corporate-headshots/woodline-partners-logo-florida.png" alt="Corporate Headshots in West Palm Beach"   loading="lazy">
         </div>
 
-        <div class="row g-2 row-cols-5" id="gallery">
+        <div class="row row-cols-5" id="gallery">
             <?php
 
             $images = glob("assets/img/corporate-headshots/woodline/*.{jpg,jpeg,png,webp}", GLOB_BRACE);
@@ -127,7 +142,7 @@ include "header.php";
             <img src="assets/img/corporate-headshots/calypso-logo-fort-lauderdale.webp" alt="Corporate Headshots in West Palm Beach"   loading="lazy">
         </div>
 
-        <div class="row g-4 cols-lg-5" id="gallery">
+        <div class="row cols-lg-5" id="gallery">
             <?php
 
             $images = glob("assets/img/corporate-headshots/calpso/*.{jpg,jpeg,png,webp}", GLOB_BRACE);
@@ -163,41 +178,47 @@ include "header.php";
 
 
 
-
+<section class="headshots-team">
+  <div class="container">
+    <div class="row">
+      <h2>Headshots That Define How Your Team is Seen</h2>
+      <p>The right headshot builds trust and commands attention. When your team looks aligned and intentional, clients read your business as organized, focused, and reliable. We create images that speak before the introduction so your people walk into every room with authority.</p>
+    </div>
+  </div>
+</section>
 
 
 
 <section class="contact-section">
     <div class="container">
       <div class="row align-items-center g-5">
-        <div class="col-lg-5">
-          <div class="brand-panel">
-            <div class="quote-box">
-              <p class="quote-text">
-               "Your headshot is your casting card. It needs to show your type, your energy, and your range in one glance."
-              </p>
-            </div>
+        <div class="col-lg-6">
+             
 
-            <div class="profile-card">
-              <div class="profile-image-wrap">
+          <div class="brand-panelf">
+                    <h2 class="title">
+              Your Corporate  Headshot Photographer
+              </h2>
+               <p class="quote-text">Big decisions, big clients. Your team’s headshots need to look the part.</p>  
+
+            <div class="profile-cardf">
+              <div class="profile-image-wrapf">
                 <img
                   src="assets/img/Ellipse-7.webp"
                   alt="Maicol Osorio"
                 />
               </div>
-              <h2 class="profile-name">Maicol Osorio</h2>
-              <p class="profile-role">Professional<br />Headshot Photographer</p>
+               <h2 class="profile-namef">Maicol Osorio</h2>
+              <p class="profile-rolef">Professional<br />Headshot Photographer</p>
+              
             </div>
           </div>
+        
         </div>
 
-        <div class="col-lg-7">
+        <div class="col-lg-6">
           <div class="form-side">
-            <h1 class="hero-title">
-              Let’s talk about 
-              In <span style="color:var(--gold);">your portfolio.</span>
-            </h1>
-            <p class="hero-subtitle">Use the form to tell me what you’re booking for and where you’re headed. I’ll follow up personally so we can plan a headshot session that supports your casting goals.</p>
+            
 
             <form id="contactForm" class="needs-validation" novalidate>
               <div class="mb-3">

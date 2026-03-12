@@ -92,11 +92,15 @@ include 'banner.php';
     </div>
 </sectin>
 
+<section class="appoinment-section">
+  <div class="container">
+    <iframe src="https://app.acuityscheduling.com/schedule.php?owner=32483838&calendarID=11583576&ref=embedded_csp" title="Schedule Appointment" width="100%" height="800" frameBorder="0" allow="payment"></iframe><script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+  </div>
+</section>
 
 
 
-
-<section class="sessions-block-section py-5">
+<section class="sessions-block-section">
   <div class="container">
     <div class="row justify-content-center text-center">
       <div class="col-lg-9">
@@ -188,8 +192,15 @@ include 'banner.php';
         
         <div class="col-lg-12">
           <div class="map-box">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.35315836176!2d-80.0622186!3d26.7011625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e779fdd8bf1edd%3A0xa1d945eea64b713f!2sMaicol%20Photography!5e0!3m2!1sen!2sbd!4v1772818362236!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+          <iframe
+            src="https://www.google.com/maps?q=Maicol+Photography,West+Palm+Beach&z=18&output=embed"
+            width="100%"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
         </div>
       </div>
   </div>

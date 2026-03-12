@@ -243,20 +243,13 @@ window.addEventListener("scroll", () => {
 // sticky header
 
 
-document.addEventListener("DOMContentLoaded", function () {
-
-  const header = document.querySelector(".site-header");
 
   window.addEventListener("scroll", function () {
-    
+    const header = document.querySelector(".site-header");
+
     if (window.scrollY > 100) {
       header.classList.add("sticky");
     } else {
       header.classList.remove("sticky");
     }
-
   });
-
-});
-
-

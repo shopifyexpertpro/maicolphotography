@@ -31,7 +31,7 @@ Together, we create a set that shows how you move so every frame feels like you 
         </div>
 
         <!-- Second Row: Gallery -->
-        <div class="row row-cols-5 g-4 studio-headshots-photography-gallery">
+        <div class="row row-cols-5 g-1 studio-headshots-photography-gallery">
             <?php foreach ($studio_headshots_photography_images as $index => $image): ?>
                 <div class="col">
                     <div 

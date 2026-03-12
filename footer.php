@@ -10,10 +10,11 @@
       <!-- Member of -->
       <div class="col-lg-3 wow animate__animated animate__fadeInUp">
         <div class="footer-title">Member of</div>
-        <div class="footer-text">
-          <div>Professional Photographers of America (PPA)</div>
-          <div class="mt-2">Chamber of Commerce of the Palm Beaches</div>
-          <div class="mt-2">Peter Hurley Headshot Crew Associate</div>
+        <div class="footer-links">
+          <a href="https://www.findaphotographer.com/photographer/maicol-osorio-8240900">Professional Photographers of America (PPA)</a><br>
+          <a href="https://business.palmbeaches.org/list/member/maicol-photography-36735">Chamber of Commerce of the Palm Beaches</a><br>
+          <a href="https://headshotcrew.com/u/maicol">Peter Hurley Headshot Crew Associate</a><br>
+          
         </div>
       </div>
 
@@ -25,7 +26,9 @@
           <a href="contact-maico-photography.php">Contact Me</a><br>
           <a href="preparation-guide-for-women.php">Preparation Guide Women</a><br>
           <a href="preparation-guide-for-men.php">Preparation Guide Men</a><br>
-          <a href="insight-journal.php">Insight Journal</a>
+          <a href="insight-journal.php">Insight Journal</a><br>
+           <a href="privacy-policy.php">Privacy Policy</a><br>
+          <a href="terms-of-service.php">Terms Of Service</a>
         </div>
       </div>
 

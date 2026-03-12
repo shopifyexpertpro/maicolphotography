@@ -119,7 +119,7 @@ include "header.php";
             <p>The professionals setting the standard in West Palm Beach and Palm Beach County.</p>
         </div>
 
-     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 gx-4 gy-4" id="gallery">
+     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5" id="gallery">
       <?php
       $images = [
           "mary-paul-editor-palm-beach-post-maicol-photography.jpg",
@@ -339,8 +339,15 @@ include 'faq-section.php'
         
         <div class="col-lg-12">
           <div class="map-box">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3564.35315836176!2d-80.0622186!3d26.7011625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e779fdd8bf1edd%3A0xa1d945eea64b713f!2sMaicol%20Photography!5e0!3m2!1sen!2sbd!4v1772818362236!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
+  <iframe
+    src="https://www.google.com/maps?q=Maicol+Photography,West+Palm+Beach&z=18&output=embed"
+    width="100%"
+    height="450"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
         </div>
       </div>
 

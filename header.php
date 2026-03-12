@@ -120,7 +120,9 @@ function esc_attr($str) {
 
 
 <body>
-<div class="contact-row">
+
+<header class="site-header">
+  <div class="contact-row">
 
   <div class="contact-item">
     <i class="fas fa-envelope icon"></i>
@@ -144,7 +146,6 @@ function esc_attr($str) {
   </div>
 
 </div>
-<header class="site-header">
   <div class="container-fluid">
      <nav class="navbar navbar-expand-lg maicol-navbar">
 

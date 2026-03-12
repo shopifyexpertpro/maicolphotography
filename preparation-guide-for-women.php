@@ -73,8 +73,8 @@ include 'banner.php';
       <div class="col-lg-6">
         <div class="portrait-content-right">
           <h2 class="portrait-title">
-           Dressing with Intention to Reflect Your Presence, Style, and Confidence<br>
-            <span> Presence, Style, and Confidence</span>
+           Dressing with Intention to Reflect Your<br>
+            <span style="color:var(--gold"> Presence, Style, and Confidence</span>
           </h2>
 
           <p class="portrait-text">
@@ -108,7 +108,7 @@ include 'banner.php';
       <div class="col-lg-6">
         <div class="portrait-content text-center">
           <h2 class="portrait-title">
-           Clothing Notes for Women
+           Clothing Notes for
             <span> Women</span>
           </h2>
 
@@ -146,8 +146,8 @@ include 'banner.php';
       <div class="col-lg-6">
         <div class="portrait-content-right text-center">
           <h2 class="portrait-title">
-           Choosing Jewelry That Reflects You 
-            <span>Reflects You</span>
+           Choosing Jewelry That 
+            <span style="color:var(--gold)">Reflects You</span>
           </h2>
 
           <p class="portrait-text">
