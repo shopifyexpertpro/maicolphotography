@@ -1,8 +1,7 @@
 <?php
-$page_title = "Contact page | Maicol Photography";
-$page_description = "Maicol Photography specializes in headshots, portraits, and personal branding for people who know that being seen is not enough. They want to be known. Real images. Real presence.
-";
-$canonical_url = "https://www.maicolphotography.com";
+$page_title = "Contact Professional Headshot Photographer | Maicol Photography";
+$page_description = "Book your headshot session in West Palm Beach. Studio or on-site. Tell me what you need. I handle the rest. (561) 231-0580.";
+$canonical_url = "https://www.maicolphotography.com/contact-maico-photography.php";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";
 

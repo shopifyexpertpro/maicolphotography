@@ -1,8 +1,7 @@
 <?php
 $page_title = "How a Professional Headshot Can Transform Your Brand | Maicol Photography";
-$page_description = "Maicol Photography specializes in headshots, portraits, and personal branding for people who know that being seen is not enough. They want to be known. Real images. Real presence.
-";
-$canonical_url = "https://www.maicolphotography.com";
+$page_description = "Your headshot is positioning, not vanity. In West Palm Beach, visibility decides opportunity. How the right image expands your brand and builds trust before the handshake.";
+$canonical_url = "https://maicolphotography.com/headshot-transform-your-brand";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";
 

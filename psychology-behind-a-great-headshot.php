@@ -1,8 +1,7 @@
 <?php
-$page_title = "Contact page | Maicol Photography";
-$page_description = "Maicol Photography specializes in headshots, portraits, and personal branding for people who know that being seen is not enough. They want to be known. Real images. Real presence.
-";
-$canonical_url = "https://www.maicolphotography.com";
+$page_title = "The Psychology Behind a Great Headshot | Maicol Photography";
+$page_description = "People judge your face in milliseconds. Your headshot shapes that judgment. The psychology behind what makes a professional headshot command attention and trust.";
+$canonical_url = "https://maicolphotography.com/psychology-behind-a-great-headshot";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";
 

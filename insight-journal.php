@@ -1,8 +1,7 @@
 <?php
-$page_title = "Contact page | Maicol Photography";
-$page_description = "Maicol Photography specializes in headshots, portraits, and personal branding for people who know that being seen is not enough. They want to be known. Real images. Real presence.
-";
-$canonical_url = "https://www.maicolphotography.com";
+$page_title = "Insight Journal | Maicol Photography";
+$page_description = "Headshot and branding insights from Maicol Photography in West Palm Beach. Presence, identity, and how professionals show up. Read the Insight Journal.";
+$canonical_url = "https://maicolphotography.com/insight-journal/";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";
 

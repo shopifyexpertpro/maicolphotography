@@ -1,7 +1,6 @@
 <?php
-$page_title = "Maicol Photography Privacy Policy | Maicol Photography";
-$page_description = "Maicol Photography specializes in headshots, portraits, and personal branding for people who know that being seen is not enough. They want to be known. Real images. Real presence.
-";
+$page_title = "Privacy Policy | Maicol Photography - West Palm Beach";
+$page_description = "Privacy policy for Maicol Photography. How we collect, use, and protect your information. West Palm Beach, FL.";
 $canonical_url = "https://www.maicolphotography.com";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";

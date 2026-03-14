@@ -1,8 +1,8 @@
 <?php
-$page_title = "Preparation Guide For Women page | Maicol Photography";
-$page_description = "Maicol Photography specializes in headshots, portraits, and personal branding for people who know that being seen is not enough. They want to be known. Real images. Real presence.
+$page_title = "What to Wear for Your Headshot | Session Prep Guide | Maicol Photography";
+$page_description = "Your session prep starts here. What to wear, how to show up, and what to expect at Maicol Photography in West Palm Beach. Walk in ready.
 ";
-$canonical_url = "https://www.maicolphotography.com";
+$canonical_url = "https://www.maicolphotography.com/preparation-guide-for-men.php";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";
 

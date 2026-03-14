@@ -1,8 +1,7 @@
 <?php
-$page_title = "Your Headshot Is a Career Move | Maicol Photography";
-$page_description = "Maicol Photography specializes in headshots, portraits, and personal branding for people who know that being seen is not enough. They want to be known. Real images. Real presence.
-";
-$canonical_url = "https://www.maicolphotography.com";
+$page_title = "Your Headshot Is a Career Move | Maicol Photography West Palm Beach";
+$page_description = "What your headshot says about you matters. Your career moves forward when your image matches your reality. A West Palm Beach perspective on presence and perception.";
+$canonical_url = "https://maicolphotography.com/your-headshot-is-a-career-move";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";
 

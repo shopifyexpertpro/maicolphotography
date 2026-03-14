@@ -1,7 +1,7 @@
 <?php
-$page_title = "Corporate Headshots in Palm Beach page | Maicol Photography";
-$page_description = "Your headshot is your casting card. It needs to show your type, your energy, and your range in one glance.";
-$canonical_url = "https://www.maicolphotography.com";
+$page_title = "Corporate Headshots in West Palm Beach | Maicol Photography";
+$page_description = "Corporate headshots in West Palm Beach. Studio or on-site. Your team is the brand. Trusted by Fidelity Investments, Douglas Elliman, and Fox Rothschild.";
+$canonical_url = "https://www.maicolphotography.com/professional-headshots/corporate-headshots";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";
 

@@ -163,7 +163,7 @@ function esc_attr($str) {
 
       <!-- DESKTOP CTA -->
       <a class="cta-btn-header  maicol-cta d-none d-lg-inline-flex"
-         href="#booking">
+         href="index.php#booking">
         Book Your Experience
       </a>
 
@@ -188,7 +188,7 @@ function esc_attr($str) {
 
           <!-- MOBILE CTA -->
           <a class="cta-btn-header d-lg-none mt-3"
-             href="#booking">
+             href="index.php#booking">
              Book Your Experience
           </a>
 

@@ -1,7 +1,7 @@
 <?php
-$page_title = "Model Headshots in Palm Beach page | Maicol Photography";
-$page_description = "Your headshot is your casting card. It needs to show your type, your energy, and your range in one glance.";
-$canonical_url = "https://www.maicolphotography.com";
+$page_title = "Model Headshots in West Palm Beach | Maicol Photography";
+$page_description = "Model headshots in West Palm Beach. Your look is your pitch. We build a set that shows type, energy, and range so casting knows who walks in. Book your session.";
+$canonical_url = "https://www.maicolphotography.com/professional-headshots/model-headshots";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";
 

@@ -1,8 +1,7 @@
 <?php
-$page_title = "ABout Us in Palm Beach page | Maicol Photography";
-$page_description = "Maicol Photography specializes in headshots, portraits, and personal branding for people who know that being seen is not enough. They want to be known. Real images. Real presence.
-";
-$canonical_url = "https://www.maicolphotography.com";
+$page_title = "About Maicol Osorio | Headshot Photographer in West Palm Beach";
+$page_description = "Maicol Osorio. West Palm Beach headshot photographer. Peter Hurley Headshot Crew Associate. Trained in NYC. Now directing professionals across Palm Beach County";
+$canonical_url = "https://www.maicolphotography.com/about-us.php";
 $og_image = "https://www.maicolphotography.com/assets/img/og-about.jpg";
 $page_type = "website";
 
