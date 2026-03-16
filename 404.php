@@ -1,4 +1,9 @@
-<?php include 'header.php' ?>
+<?php
+http_response_code(404);
+$page_title = "Page Not Found | Maicol Photography";
+$page_description = "The page you are looking for does not exist.";
+
+include 'header.php' ?>
   
 
 

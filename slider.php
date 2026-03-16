@@ -1,10 +1,10 @@
 <?php
 $studio_headshots_photography_images = [
+    "sanchellexo-studio-headshot-afro-green-blouse-west-palm-beach-maicol-photographyr.webp",
     "sanchellexo-model-portrait-soft-smile-afro-west-palm-beach-maicol-photography.webp",
-    "sanchellexo-model-portrait-framing-afro-green-blouse-west-palm-beach-maicol-photography.webp",
-    "sanchellexo-model-headshot-afro-hands-up-west-palm-beach-maicol-photography.webp",
     "sanchellexo-model-smiling-portrait-side-angle-afro-west-palm-beach-maicol-photography.webp",
-    "sanchellexo-studio-headshot-afro-green-blouse-west-palm-beach-maicol-photography.webp"
+    "sanchellexo-model-headshot-afro-hands-up-west-palm-beach-maicol-photographyr.webp",
+    "sanchellexo-model-portrait-framing-afro-green-blouse-west-palm-beach-maicol-photography.webp"
 ];
 
 function studio_headshots_photography_alt($filename) {

@@ -112,8 +112,7 @@ letter-spacing:.5px;
 
 .brand-images{
 display:grid;
-grid-template-columns:.5fr 1.8fr;
-gap:20px;
+grid-template-columns: 1fr;
 align-items:stretch;
 }
 

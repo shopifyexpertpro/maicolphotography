@@ -10,8 +10,8 @@ include "header.php";
 
 <section class="hero-section">
     <div class="image_contaner">
-       <img src="assets/img/professional/photography-maicol.webp"
-     alt="Be the standard, not the trend."
+       <img src="assets/img/professional/professional-headshots-west-palm-beach-hero-1920x960-nogutter-HIRES.webp"
+     alt="professional-headshots-west-palm-beach-hero-1920x960-nogutter-HIRES"
      loading="lazy">
     </div>
 
@@ -121,7 +121,7 @@ include "header.php";
      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5" id="gallery">
       <?php
       $images = [
-          "mary-paul-editor-palm-beach-post-maicol-photography.jpg",
+          "mary-paul-editor-palm-beach-post-maicol-photography.webp",
           "gavin-guinan-executive-headshot-west-palm-beach-maicol-photography.webp",
           "cristeta-comerford-chef-headshot-west-palm-beach-maicol-photography.webp",
           "josh-remillard-executive-headshot-palm-beach-gardens-maicol-photography.webp",
@@ -130,7 +130,7 @@ include "header.php";
           "mckenna-west-planning-project-manager-headshot-west-palm-beach-maicol-photography.webp",
           "seth-dillon-ceo-babylon-bee-headshot-west-palm-beach-maicol-photography.webp",
           "vicki-belleus-professional-headshots-west-palm-beach-maicol-photography.webp",
-          "victor-ramos-professional-headshot-west-palm-beach-maicol-photography.jpg"
+          "victor-ramos-professional-headshot-west-palm-beach-maicol-photography.webp"
       ];
 
       $url = "assets/img/professional/images/";
@@ -231,7 +231,7 @@ include 'product.php'
 include 'faq-section.php' 
  ?>
 <section class="ready-section">
-  <div class="container-fluid">
+  <div class="container-fluid px-0">
     <div class="ready-box">
       <div class="row align-items-center">
         <div class="col-lg-8 col-md-7">
@@ -356,70 +356,13 @@ include 'faq-section.php'
     <h3 class="locations-title">Serving professionals across Palm Beach County</h3>
   </div>
 
-  <div class="col-md-4">
-    <ul class="location-list">
-      <li>
-        <a href="">
-          <i class="fa-solid fa-location-dot"></i> West Palm Beach
-        </a>
-      </li>
-      <li>
-        <a href="professional-headshots-in-palm-beach.php">
-          <i class="fa-solid fa-location-dot"></i> Palm Beach
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="fa-solid fa-location-dot"></i> Palm Beach Gardens
-        </a>
-      </li>
-    </ul>
-  </div>
+  
 
-  <div class="col-md-4">
-    <ul class="location-list">
-      <li>
-        <a href="">
-          <i class="fa-solid fa-location-dot"></i> Boca raton
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="fa-solid fa-location-dot"></i> Jupiter
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="fa-solid fa-location-dot"></i> Wellington
-        </a>
-      </li>
-      
-    </ul>
-  </div>
+ 
 
-  <div class="col-md-4">
-    <ul class="location-list">
-      <li>
-        <a href="index.php">
-          <i class="fa-solid fa-location-dot"></i> Delray Beach
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="fa-solid fa-location-dot"></i> Royal Palm Beach
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="fa-solid fa-location-dot"></i> Boynton Beach
-        </a>
-      </li>
-      
-      
-    </ul>
-  </div>
+  
 </div>
-
+ <?php include 'all-beach-link.php' ?>
     </div>
 </section>
 

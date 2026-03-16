@@ -7,23 +7,40 @@ $page_type = "website";
 
 include "header.php";
 ?>
+<!-- <section class="corporate-hero-section">
+    <div class="image_contaner">
+       <img src="assets/img/corporate-headshots/starboard-realty-team-corporate-headshots-west-palm-beach.webp"
+     alt="You are the brand. Let them see it"
+     loading="lazy" whdth="100%" height="auto">
+    </div>
 
-<section class="corporate-hero-section">
-  <div class="container">
-    <div class="row g-5 align-items-center flex-column-reverse flex-lg-row">
-      <div class="col-md-6">
-        <div class="heading">
+    <div class="hero-heading">
         <h1>Corporate Headshots in <span>West Palm Beach</span></h1>
         <p>Your team is the brand. Let them look like it.</p>
     </div>
+</section> -->
+
+<section>
+  <div class="container">
+    <div class="row g-3 align-items-center">
+
+      <!-- Image -->
+      <div class="col-md-6 order-1 order-md-2">
+        <img 
+          src="assets/img/corporate-headshots/the-starboard-group-maicol-photography.webp"
+          alt="You are the brand. Let them see it"
+          loading="lazy"
+          class="img-fluid w-100">
       </div>
-      <div class="col-md-6">
-        <div class="image-contaner">
-       <img src="assets/img/corporate-headshots/the-starboard-group-maicol-photography.webp"
-     alt="You are the brand. Let them see it"
-     loading="lazy">
-    </div>
+
+      <!-- Text -->
+      <div class="col-md-6 order-2 order-md-1">
+        <div class="section-heading">
+          <h1 class="text-center">Model Headshots in <span>West Palm Beach</span></h1>
+          <p>You are the brand. Let them see it.</p>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
@@ -107,22 +124,22 @@ include "header.php";
     <div class="container">
 
         <div class="section-logo">
-            <img src="assets/img/corporate-headshots/woodline-partners-logo-florida.png" alt="Corporate Headshots in West Palm Beach"   loading="lazy">
+            <img src="assets/img/corporate-headshots/woodline-partners-logo-florida.webp" alt="Corporate Headshots in West Palm Beach"   loading="lazy">
         </div>
 
-        <div class="row row-cols-5" id="gallery">
+        <div class="row" id="gallery">
             <?php
 
             $images = glob("assets/img/corporate-headshots/woodline/*.{jpg,jpeg,png,webp}", GLOB_BRACE);
             sort($images); // sort by filename
-            $images = array_slice($images, 0, 5); // only first 6 images
+            $images = array_slice($images, 0,8); // only first 6 images
 
             foreach($images as $img){
 
             $filename = basename($img);
             $alt = ucwords(str_replace('-', ' ', pathinfo($filename, PATHINFO_FILENAME)));
 
-            echo '<div class="col gallery-item wow animate__animated animate__zoomInUp">';
+            echo '<div class="col col-md-6 col-lg-3 gallery-item wow animate__animated animate__zoomInUp">';
             echo '<img src="'.$img.'" alt="'.$alt.'">';
             echo '</div>';
 

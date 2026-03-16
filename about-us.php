@@ -295,7 +295,7 @@ include "header.php";
 
   <!-- Background Image -->
   <img 
-    src="assets/img/about-us/studio_16x9.webp"
+    src="assets/img/about-us/MaicolPhotography-Studio.webp"
     alt="Colorful mural outside Maicol Photography studio in Palm Beach"
     class="cta-bg"
     loading="lazy"

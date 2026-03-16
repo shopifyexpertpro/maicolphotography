@@ -122,81 +122,116 @@ function esc_attr($str) {
 <body>
 
 <header class="site-header">
-  <div class="contact-row">
-
-  <div class="contact-item">
-    <i class="fas fa-envelope icon"></i>
-    <a href="mailto:photos@maicolphotography.com" class="text">
-      photos@maicolphotography.com
-    </a>
-  </div>
-
-  <div class="contact-item">
-    <i class="fas fa-phone icon"></i>
-    <a href="tel:+15612310580" class="text">
-      (561) 231-0580
-    </a>
-  </div>
-
-  <div class="contact-item">
-    <i class="fas fa-map-marker-alt icon"></i>
-    <span class="text">
-      1016 Clare Ave, STE 5, West Palm Beach, FL 33401
-    </span>
-  </div>
-
-</div>
   <div class="container-fluid">
-     <nav class="navbar navbar-expand-lg maicol-navbar">
+    <nav class="navbar navbar-expand-lg maicol-navbar">
 
       <!-- LOGO -->
       <a class="navbar-brand" href="index.php">
         <img class="brand-logo" src="assets/img/loggo.webp" alt="Maicol Photography Logo">
       </a>
 
-      <!-- SOCIAL ICONS -->
-      <div class="social d-flex align-items-center">
+      <!-- SOCIAL -->
+      <div class="header-social d-none d-lg-flex">
         <a href="https://www.instagram.com/maicolheadshots"><i class="fa-brands fa-instagram"></i></a>
         <a href="https://www.facebook.com/maicolheadshots"><i class="fa-brands fa-facebook-f"></i></a>
         <a href="https://www.linkedin.com/in/mosorio/"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
 
-      <!-- DESKTOP CTA -->
-      <a class="cta-btn-header  maicol-cta d-none d-lg-inline-flex"
-         href="index.php#booking">
-        Book Your Experience
-      </a>
-
-      <!-- MOBILE HAMBURGER -->
+      <!-- MOBILE TOGGLER -->
       <button class="navbar-toggler border-0 shadow-none"
               type="button"
               data-bs-toggle="collapse"
-              data-bs-target="#mainNav">
+              data-bs-target="#mainNav"
+              aria-controls="mainNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- MENU -->
-      <div class="collapse navbar-collapse justify-content-center" id="mainNav">
-
+      <!-- CENTER COLUMN -->
+      <div class="header-center d-none d-lg-flex">
         <div class="main-menu">
-
           <a href="index.php">Professional Headshots</a>
-
           <a href="model-headshots.php">Model Headshots</a>
-
           <a href="corporate-headshots.php">Corporate Headshots</a>
-
-          <!-- MOBILE CTA -->
-          <a class="cta-btn-header d-lg-none mt-3"
-             href="index.php#booking">
-             Book Your Experience
-          </a>
-
         </div>
 
+        <div class="contact-row">
+          <div class="contact-item">
+            <i class="fas fa-envelope icon"></i>
+            <a href="mailto:photos@maicolphotography.com" class="text">
+              photos@maicolphotography.com
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-phone icon"></i>
+            <a href="tel:+15612310580" class="text">
+              (561) 231-0580
+            </a>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt icon"></i>
+            <span class="text">
+              1016 Clare Ave, STE 5, West Palm Beach, FL 33401
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="header-cta d-none d-lg-flex">
+        <a class="cta-btn-header maicol-cta" href="index.php#booking">
+          Book Your Experience
+        </a>
+      </div>
+
+      <!-- MOBILE MENU -->
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="mobile-menu-wrap d-lg-none">
+          
+          <div class="mobile-social">
+            <a href="https://www.instagram.com/maicolheadshots"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.facebook.com/maicolheadshots"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/mosorio/"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+
+          <div class="main-menu mobile-main-menu">
+            <a href="index.php">Professional Headshots</a>
+            <a href="model-headshots.php">Model Headshots</a>
+            <a href="corporate-headshots.php">Corporate Headshots</a>
+          </div>
+
+          <div class="mobile-contact-row">
+            <div class="contact-item">
+              <i class="fas fa-envelope icon"></i>
+              <a href="mailto:photos@maicolphotography.com" class="text">
+                photos@maicolphotography.com
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-phone icon"></i>
+              <a href="tel:+15612310580" class="text">
+                (561) 231-0580
+              </a>
+            </div>
+
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt icon"></i>
+              <span class="text">
+                1016 Clare Ave, STE 5, West Palm Beach, FL 33401
+              </span>
+            </div>
+          </div>
+
+          <a class="cta-btn-header mobile-cta" href="index.php#booking">
+            Book Your Experience
+          </a>
+        </div>
       </div>
 
     </nav>
-
   </div>
 </header>

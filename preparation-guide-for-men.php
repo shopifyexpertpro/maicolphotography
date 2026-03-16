@@ -12,7 +12,7 @@ include "header.php";
 <?php
 $heading = "Preparation Guide For Men";
 $short_desc = "";
-$image = "assets/img/preparation/banner.jpg";
+$image = "assets/img/preparation/banner-1.webp";
 include 'banner.php';
 ?>
 
@@ -25,21 +25,15 @@ include 'banner.php';
       <div class="col-lg-6">
         <div class="portrait-content text-center">
           <h2 class="portrait-title">
-            Preparing for Your Signature<br>
-            <span> Headshot or Portrait Experience</span>
+            Dress With
+            <span> Confidence</span>
           </h2>
 
           <p class="portrait-text">
-            This session is about capturing your presence, your style, and your confidence.
-            It’s more than just getting a great photo. It’s time set aside for you to focus,
-            feel at ease, and be seen in a way that feels natural.
-          </p>
+           What you wear in your headshot should represent how you want to present yourself professionally. Choose clothing that feels natural but also polished and intentional. A well-fitted blazer, a clean collared shirt, or a simple layered outfit can create a timeless and professional appearance.
 
           <p class="portrait-text">
-            You’ll find everything here to help you arrive prepared. From wardrobe choices
-            to the small details that shape how you’re seen, this guide covers what matters.
-            It’s about showing up with intention and walking into your session knowing what
-            you’re there to create.
+           Solid colors usually photograph best because they keep the attention on your face. Avoid loud patterns, large logos, or overly bright prints that may distract from your expression. Bringing two or three outfit options can also help create a variety of looks for different professional platforms.
           </p>
         </div>
       </div>
@@ -47,7 +41,7 @@ include 'banner.php';
       <!-- Right Image Layout -->
       <div class="col-lg-6">
             <div class="portrait-grid">
-             <img src="assets/img/preparation/mens.png" alt="Portrait headshot 1">
+             <img src="assets/img/preparation/attorney-headshots-west-palm-beach-maicolphotography-lawclc.webp" alt="Portrait headshot 1">
             </div>
       </div>
 
@@ -65,7 +59,7 @@ include 'banner.php';
       <!-- Left Image Layout -->
       <div class="col-lg-6">
             <div class="portrait-grid">
-             <img src="assets/img/preparation/haley-busch-professional-headshot-maicol-photography-collage.webp" alt="Portrait headshot 1">
+             <img src="assets/img/preparation/david-burck-real-estate-headshots-west-palm-beach-maicol-photography.webp" alt="Portrait headshot 1">
             </div>
       </div>
 
@@ -73,25 +67,15 @@ include 'banner.php';
       <div class="col-lg-6">
         <div class="portrait-content-right">
           <h2 class="portrait-title">
-           Dressing with Intention to Reflect Your Presence, Style, and Confidence<br>
-            <span> Presence, Style, and Confidence</span>
+           Grooming
+            <span> Matters</span>
           </h2>
 
           <p class="portrait-text">
-          Bring options that feel like you and support the message you want to communicate. Select pieces that feel natural and carry the energy you want your headshot to hold.
+         Paying attention to small grooming details can make a big difference in your final image. Before your session, trim nose and ear hair, tidy your eyebrows, and make sure your beard or mustache is neatly groomed. These simple steps help create a clean and polished appearance.
           </p>
 
-          <p class="portrait-text">
-          <strong>Keep in mind:</strong><br>
-            • Choose clothing that complements your shape without feeling restrictive.<br>
-            • Bring three to four looks with variation in fabric, neckline, or layering.<br>
-            • Solid colors tend to photograph best. If your brand includes pattern or texture,
-            bring what feels authentic to you.<br>
-            • Choose fabrics with structure and texture. They hold shape well and add depth on camera.<br>
-            • Shiny or bold prints can pull attention away unless they're part of your core brand.
-            Clean lines and intentional texture help keep the focus on you.
-          </p>
-          
+          <p>If you prefer a clean shave, consider shaving the morning of the session for the freshest look. Using a light moisturizer and lip balm can also help your skin appear smooth and healthy on camera.</p>
         </div>
       </div>
 
@@ -108,12 +92,15 @@ include 'banner.php';
       <div class="col-lg-6">
         <div class="portrait-content text-center">
           <h2 class="portrait-title">
-           Clothing Notes for Men
-            <span> Men</span>
+           Get Your Hair 
+            <span> Camera-Ready</span>
           </h2>
 
           <p class="portrait-text">
-          Bring at least one well-fitted blazer or jacket. A collared shirt works with or without a tie, depending on your style and how you plan to use the image. Layering adds depth and dimension, especially on camera.
+         Your hairstyle should look natural and similar to how you normally present yourself in professional settings. The goal is to look like the best version of your everyday self rather than trying a completely new style just for the photos.
+          </p>
+             <p class="portrait-text">
+        If you plan to get a haircut, schedule it about five to seven days before your session so it looks more natural on camera. On the day of the shoot, style your hair the way you normally would and bring a comb or small hair product for quick touch-ups if needed.
           </p>
 
           
@@ -123,7 +110,7 @@ include 'banner.php';
       <!-- Right Image Layout -->
       <div class="col-lg-6">
             <div class="portrait-grid">
-             <img src="assets/img/preparation/clothingpng.png" alt="Portrait headshot 1">
+             <img src="assets/img/preparation/cj-leslie-realtor-headshot-west-palm-beach-maicol-photography.webp" alt="Portrait headshot 1">
             </div>
       </div>
 
@@ -146,20 +133,18 @@ include 'banner.php';
       <div class="col-lg-6">
         <div class="portrait-content-right text-center">
           <h2 class="portrait-title">
-           Essential Tips for Men’s Grooming
-            <span>Grooming</span>
+           Prepare Your Skin and 
+            <span>Energy</span>
           </h2>
 
-          <p class="portrait-text">
-         Grooming matters. It’s part of how you carry yourself and how that translates on camera. If you prefer a bit of scruff in your photos, start growing it a few days ahead so it looks intentional. If you’re going clean-shaven, take care of that the morning of your session for a sharp, fresh look.
+          
 
-          </p>
-
-          <p class="portrait-text">
-        Check the details that often get overlooked. If your lips are dry, start using Chapstick a few days in advance. Trim any visible nose and ear hair the day of the shoot. Tidy up your brows. If a unibrow isn’t part of your look, take care of it before the shoot. If it is, make sure it’s groomed with intention.
+        
+           <p class="portrait-text">
+       Looking great in photos is not only about clothing and grooming — it’s also about how you feel. Getting enough sleep the night before your session helps you look refreshed and energized, which naturally improves your expression in photos.
           </p>
            <p class="portrait-text">
-        These small things make a big difference. They show you came prepared and help keep the focus where it belongs, on you.
+       Staying hydrated in the days leading up to your shoot can help your skin appear healthier and more vibrant. Avoid heavy sun exposure before the session, and remember that small skin imperfections can always be corrected during retouching.
           </p>
           
         </div>
@@ -181,7 +166,7 @@ include 'banner.php';
   <div class="container position-relative z-2">
     <div class="row justify-content-center">
       <div class="col-lg-10 text-center text-white">
-        <h2 class="section-title mb-4">Final Tips for a Confident Photoshoot</h2>
+        <h2 class="section-title mb-4">Relax and Trust the Process</h2>
         <p class="section-subtitle mb-5">
           Preparation sets the tone. When you feel ready, the entire experience feels more focused and centered on you.
         </p>
@@ -193,25 +178,17 @@ include 'banner.php';
         <div class="tips-box">
           <div class="tip-item text-center">
             <p>
-              Start hydrating your skin four to five days before your session and apply lip balm daily to keep your lips smooth.
-              Avoid long sun exposure to prevent irritation or sunburn. A good night’s rest helps reduce puffiness, smooth out under eyes,
-              and allows you to show up focused and energized.
+              Many people feel a little uncomfortable in front of the camera at first, and that’s completely normal. A professional photographer will guide you through poses, posture, and expressions to help you feel comfortable and confident during the session.
             </p>
           </div>
 
           <div class="tip-item text-center">
             <p>
-              Lay out your wardrobe the day before. Having your looks ready keeps your morning simple and helps you feel confident in your choices.
-              If you’re unsure what works best, bring a few extra options and we’ll go through them together.
+             When you relax and trust the process, your personality naturally comes through in the photos. A strong headshot should communicate confidence, approachability, and professionalism while making a lasting first impression.
             </p>
           </div>
 
-          <div class="tip-item text-center">
-            <p>
-              Music helps set the mood. If you have a playlist that helps you relax or feel focused, feel free to bring it or send it my way.
-              We’ll shape the environment around you.
-            </p>
-          </div>
+          
 
           <div class="experience-note text-center">
             <span>Your experience matters.</span>

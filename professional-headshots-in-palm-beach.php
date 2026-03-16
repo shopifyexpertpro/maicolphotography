@@ -10,8 +10,8 @@ include "header.php";
 
 <section class="hero-section">
     <div class="image_contaner">
-       <img src="assets/img/professional/photography-maicol.webp"
-     alt="Be the standard, not the trend."
+       <img src="assets/img/professional/professional-headshots-west-palm-beach-hero-1920x960-nogutter-HIRES.webp"
+     alt="professional-headshots-west-palm-beach-hero-1920x960-nogutter-HIRES"
      loading="lazy">
     </div>
 
@@ -19,7 +19,7 @@ include "header.php";
 <section class="about-section" >
     <div class="container">
         <div class="row">
-            <h2 class="main-title">Be recognized, not introduced.</h2>
+            <h2 class="main-title">Be the standard, not a trend.</h2>
             <h1 class="sub-title">Professional Headshots in Palm Beach</h1>
             <div class="button_cta">
                 <a href="#booking">Book Your Experience</a>
@@ -33,23 +33,11 @@ include "header.php";
 </section>
 
 
+
 <section class="branding-section wow animate__animated animate__fadeInUp" data-wow-duration="1s">
     <div class="container">
       <!-- First Row: Video -->
-      <div class="row align-items-center g-3">
-        <div class="col-md-4">
-            <div class="content text-white">
-                <h2>Be Recognized.</h2>
-                <ul>
-                    <li><strong> Command Respect</strong> – Ensure your reputation precedes you. </li>
-                    <li> <strong>Curate Perception</strong> – Maintain a refined image that resonates in every circle. </li>
-                    <li> <strong>Confirm Credibility</strong> – Align your digital prestige with your actual standing. </li>
-                    
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-8">
-            <div class="video-wrapper">
+      <div class="video-wrapper">
         <div class="video-box">
           <video id="heroVideo" poster="your-poster-image.jpg" muted loop playsinline>
             <source src="assets/img/professional/Maicol-Hero-video.mp4" type="video/mp4" />
@@ -67,12 +55,38 @@ include "header.php";
           </button>
         </div>
       </div>
+        <div class="row text-center pt-5">
+          <h2 class="text-white">Be Recognized.</h2>
+        </div>
+      <!-- Second Row: 3 Columns -->
+      <div class="row features-row">
+        <div class="col-lg-4 col-md-6 feature-col wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+          <div class="feature-number">01</div>
+          <h3 class="feature-title">Command Respect</h3>
+          <p class="feature-text text-white">
+            Ensure your reputation precedes you.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 feature-col wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+          <div class="feature-number">02</div>
+          <h3 class="feature-title">Curate Perception</h3>
+          <p class="feature-text text-white">
+            Maintain a refined image that resonates in every circle.
+          </p>
+        </div>
+
+        <div class="col-lg-4 col-md-12 feature-col wow animate__animated animate__fadeInUp" data-wow-delay="0.5s">
+          <div class="feature-number">03</div>
+          <h3 class="feature-title">Confirm Credibilit</h3>
+          <p class="feature-text text-white">
+           Align your digital prestige with your actual standing.
+          </p>
         </div>
       </div>
-     
-     
     </div>
 </section>
+
 
 <section id="recognized-section">
   <div class="recognized-container">
@@ -108,7 +122,7 @@ include "header.php";
      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5" id="gallery">
       <?php
       $images = [
-          "mary-paul-editor-palm-beach-post-maicol-photography.jpg",
+          "mary-paul-editor-palm-beach-post-maicol-photography.webp",
           "gavin-guinan-executive-headshot-west-palm-beach-maicol-photography.webp",
           "cristeta-comerford-chef-headshot-west-palm-beach-maicol-photography.webp",
           "josh-remillard-executive-headshot-palm-beach-gardens-maicol-photography.webp",
@@ -117,7 +131,7 @@ include "header.php";
           "mckenna-west-planning-project-manager-headshot-west-palm-beach-maicol-photography.webp",
           "seth-dillon-ceo-babylon-bee-headshot-west-palm-beach-maicol-photography.webp",
           "vicki-belleus-professional-headshots-west-palm-beach-maicol-photography.webp",
-          "victor-ramos-professional-headshot-west-palm-beach-maicol-photography.jpg"
+          "victor-ramos-professional-headshot-west-palm-beach-maicol-photography.webp"
       ];
 
       $url = "assets/img/professional/images/";

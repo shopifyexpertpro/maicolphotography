@@ -1,4 +1,3 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
 <style>
 
@@ -119,165 +118,76 @@
   margin-bottom: 36px;
 }
 
-.location-column {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  align-items: flex-start; /* keeps left alignment */
-}
 
-.location-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  color: var(--characoal);
-  text-decoration: none;
-  font-size: 1.5rem;
-  font-weight: 500;
-  line-height: 1.4;
-  transition: all 0.3s ease;
-}
-
-.location-link i {
-  color: var(--gold);
-  font-size: 1.15rem;
-}
-
-.location-link:hover {
-  color: var(--navy);
-  transform: translateX(4px);
-}
-
-.location-link:hover i {
-  color: var(--navy);
-}
 
 </style>
 
 
 <section class="location-section">
-<div class="container">
+  <div class="container">
+
+    <!-- Section Heading -->
     <div class="section-heading">
-          <h2> Your professional headshot experience in <span> <?php echo $heading_title; ?></span></h2>
-          <p >
-            Conveniently located just minutes from the Royal Park Bridge, my studio offers a private,
-            professional space away from the island’s bustle. Easy access from Worth Avenue and South Ocean Blvd
-            ensures you can get in, get the perfect shot, and get back to your day.
-            </p>
+      <h2>
+        Your professional headshot experience in
+        <span><?php echo $heading_title; ?></span>
+      </h2>
+
+      <p>
+        Conveniently located just minutes from the Royal Park Bridge, my studio
+        offers a private, professional space away from the island’s bustle.
+        Easy access from Worth Avenue and South Ocean Blvd ensures you can get
+        in, get the perfect shot, and get back to your day.
+      </p>
+    </div>
+
+    <!-- Contact Line -->
+    <div class="contact-line">
+      <strong>Maicol Photography</strong> |
+      1016 Clare Ave, STE 5, West Palm Beach, FL 33401 |
+      <a href="tel:+15612310580">(561) 231-0580</a> |
+      <a href="sms:+15612310580">Text Me</a> |
+      <a href="mailto:photos@maicolphotography.com">photos@maicolphotography.com</a>
+    </div>
+
+    <!-- Map Card -->
+    <div class="map-card">
+      <div class="row map-row">
+
+        <!-- Studio Image -->
+        <div class="col-lg-4">
+          <div class="image-box">
+            <img
+              src="assets/img/about-us/MaicolPhotography-Studio.webp"
+              alt="Maicol Photography Studio"
+            />
+
+            <div class="parking-badge">
+              <span class="parking-icon">P</span>
+              <span>FREE PARKING</span>
+            </div>
+          </div>
         </div>
 
+        <!-- Google Map -->
+        <div class="col-lg-8">
+          <div class="map-box">
+            <iframe
+              src="https://www.google.com/maps?q=Maicol+Photography,West+Palm+Beach&z=18&output=embed"
+              loading="lazy"
+            ></iframe>
+          </div>
+        </div>
 
-<div class="contact-line">
-<strong>Maicol Photography</strong> |
-1016 Clare Ave, STE 5, West Palm Beach, FL 33401 |
-<a href="tel:+15612310580">(561) 231-0580</a> |
-<a href="sms:+15612310580">Text Me</a> |
-<a href="mailto:photos@maicolphotography.com">photos@maicolphotography.com</a>
-</div>
+      </div>
+    </div>
 
+    <!-- Locations Title -->
+    <h3 class="locations-title">
+      Serving professionals across Palm Beach County
+    </h3>
 
-<div class="map-card">
-<div class="row map-row">
+   <?php include 'all-beach-link.php' ?>
 
-<div class="col-lg-4">
-<div class="image-box">
-<img src="https://www.maicolphotography.com/wp-content/uploads/2024/05/TheStudio1016.jpeg" alt="Maicol Photography Studio">
-
-<div class="parking-badge">
-<span class="parking-icon">P</span>
-<span>FREE PARKING</span>
-</div>
-</div>
-</div>
-
-<div class="col-lg-8">
-<div class="map-box">
-
-<iframe
-src="https://www.google.com/maps?q=Maicol+Photography,West+Palm+Beach&z=18&output=embed"
-loading="lazy">
-</iframe>
-
-</div>
-</div>
-
-</div>
-</div>
-
-
-<h3 class="locations-title">
-Serving professionals across Palm Beach County
-</h3>
-
-
-<div class="row justify-content-center">
-
-<div class="col-md-6 col-lg-4">
-<div class="location-column">
-
-<a class="location-link" href="index.php">
-<i class="bi bi-geo-alt-fill"></i>
-<span>West Palm Beach</span>
-</a>
-
-<a class="location-link" href="/professional-headshots-in-palm-beach.php/">
-<i class="bi bi-geo-alt-fill"></i>
-<span>Palm Beach</span>
-</a>
-
-<a class="location-link" href="/palm-beach-gardens-headshots/">
-<i class="bi bi-geo-alt-fill"></i>
-<span>Palm Beach Gardens</span>
-</a>
-
-</div>
-</div>
-
-
-<div class="col-md-6 col-lg-4">
-<div class="location-column">
-
-<a class="location-link" href="/boca-raton-headshots/">
-<i class="bi bi-geo-alt-fill"></i>
-<span>Boca Raton</span>
-</a>
-
-<a class="location-link" href="/jupiter-headshots/">
-<i class="bi bi-geo-alt-fill"></i>
-<span>Jupiter</span>
-</a>
-
-<a class="location-link" href="/wellington-headshots/">
-<i class="bi bi-geo-alt-fill"></i>
-<span>Wellington</span>
-</a>
-
-</div>
-</div>
-
-
-<div class="col-md-6 col-lg-4">
-<div class="location-column">
-
-<a class="location-link" href="/index.php/">
-<i class="bi bi-geo-alt-fill"></i>
-<span>Delray Beach</span>
-</a>
-
-<a class="location-link" href="/royal-palm-beach-headshots/">
-<i class="bi bi-geo-alt-fill"></i>
-<span>Royal Palm Beach</span>
-</a>
-
-<a class="location-link" href="/boynton-beach-headshots/">
-<i class="bi bi-geo-alt-fill"></i>
-<span>Boynton Beach</span>
-</a>
-
-</div>
-</div>
-
-</div>
-
-</div>
+  </div>
 </section>

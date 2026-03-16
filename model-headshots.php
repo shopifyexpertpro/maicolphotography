@@ -43,24 +43,27 @@ include "header.php";
 
 
  <section class="gallery-section">
-    <div class="container">
+    <div class="container-fluid">
 
         <div class="section-heading">
             <h2>The Faces of  <span>West Palm Beach Talent </span></h2>
             <p>You spend time curating your look for casting directors. Does your headshot keep up with who you are today, or does it feel pedestrian?</p>
         </div>
 
-        <div class="row g-4" id="gallery">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5" id="gallery">
            <?php
       $images2 = [
-          "amone-bane-entertainer-headshot-west-palm-beach-maicol-photography.jpg",
+          "amone-bane-entertainer-headshot-west-palm-beach-maicol-photography.webp",
           "makeup-artist-headshot-west-palm-beach-maicol-photography.webp",
-          "daniel-martinez-model-headshot-orlando-maicol-photography.jpg",
+          "daniel-martinez-model-headshot-orlando-maicol-photography.webp",
           "claudia-fernandes-model-headshot-west-palm-beach-maicol-photography-claudia-fernandes.webp",
-          "claire-boutte-dancer-headshot-west-palm-beach-maicol-photography.jpg",
+          "thurman-brown-male-model-headshot-west-palm-beach-maicol-photography.webp",
+          "claire-boutte-dancer-headshot-west-palm-beach-maicol-photography.webp",
           "sebastian-torna-muscian-headshots-west-palm-beach-maicol-photography.webp",
           "yoga-model-heashot-west-palm-beach-maicol-photography.webp",
+          
           "jt-stockman-comedian-headshot-fortlauderdale-maicol-photography.webp",
+          "mature-actress-headshot-westpalm-beach-maicol-photography.webp"
           
       ];
 
@@ -80,7 +83,7 @@ include "header.php";
           $name = studio_headshot($filename);
           $itemDelay = number_format((($index % 5) * 0.1), 1);
       ?>
-          <div class="col col-md-2 col-lg-3 gallery-item wow animate__animated animate__zoomInUp" data-wow-delay="<?= $itemDelay ?>s">
+          <div class="col gallery-item wow animate__animated animate__zoomInUp" data-wow-delay="<?= $itemDelay ?>s">
               <img src="<?php echo $url ?><?= $img ?>" class="img-fluid" alt="<?= $name ?>">
               <p class="text-center mt-2 small"><?= $name ?></p>
           </div>
@@ -129,9 +132,9 @@ include "header.php";
         
 
         <div class="side-images">
-          <img src="assets/img/model-headshots/sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp" alt="Capture Your Confidence">
+          <!-- <img src="assets/img/model-headshots/sanchellexo-model-smiling-headshot-afro-glam-west-palm-beach-maicol-photography.webp" alt="Capture Your Confidence">
           <img src="assets/img/model-headshots/gallery-2/sanchellexo-model-portrait-framing-afro-green-blouse-west-palm-beach-maicol-photography.webp" alt="Capture Your Confidence">
-          <img src="assets/img/model-headshots/gallery-2/sanchellexo-studio-headshot-afro-green-blouse-west-palm-beach-maicol-photography.webp" alt="Capture Your Confidence">
+          <img src="assets/img/model-headshots/gallery-2/sanchellexo-studio-headshot-afro-green-blouse-west-palm-beach-maicol-photographyr.webp" alt="Capture Your Confidence"> -->
         </div>
 
         <div class="main-image">
@@ -164,6 +167,10 @@ include 'slider.php'
 
   </div>
 </section>
+
+<?php 
+include 'model-product.php' 
+ ?>
 
 
 <section class="gallery-section-two">
@@ -200,9 +207,7 @@ include 'slider.php'
 
 
 </section>
-<?php 
-include 'product.php' 
- ?>
+
 <section class="contact-section">
     <div class="container">
       <div class="row align-items-center g-5">
@@ -250,8 +255,7 @@ include 'product.php'
         <div class="col-12">
           <div class="section-heading">
             <h2>Where to Get Model Headshots in <span>West Palm Beach </span></h2>
-            <p>  Maicol Photography is minutes from I-95 and Okeechobee Blvd in West Palm Beach. Models and performers travel from Palm Beach, Palm Beach Gardens, Jupiter, Wellington, Boca Raton, and across South Florida for headshots that book work.
-            Ready to upgrade your portfolio? Show up ready to be remembered.</p>
+            <p>  Maicol Photography is minutes from I-95 and Okeechobee Blvd in West Palm Beach. Models and performers travel from Palm Beach, Palm Beach Gardens, Jupiter, Wellington, Boca Raton, and across South Florida for headshots that book work. Ready to upgrade your portfolio? Show up ready to be remembered.</p>
         </div>
 
 
@@ -289,7 +293,7 @@ include 'product.php'
       <div class="row media-box g-4 align-items-stretch">
         <div class="col-lg-5">
           <div class="left-card" style="background:var(--navy)">
-            <img src="https://www.maicolphotography.com/wp-content/uploads/2024/05/TheStudio1016.jpeg" alt="Studio location">
+            <img src="assets/img/about-us/MaicolPhotography-Studio.webp" alt="Studio location">
             <div class="left-card-bottom">
               <h4>FREE PARKING</h4>
             </div>
@@ -316,30 +320,12 @@ include 'product.php'
           <h3 class="locations-title">Model Headshots In Palm Beach County And Beyond</h3>
         </div>
 
-        <div class="col-md-4">
-          <ul class="location-list">
-            <li><i class="fa-solid fa-location-dot"></i>West Palm Beach</li>
-            <li><i class="fa-solid fa-location-dot"></i> Palm Beach</li>
-            <li><i class="fa-solid fa-location-dot"></i> Palm Beach Gardens</li>
-          </ul>
-        </div>
+        
 
-        <div class="col-md-4">
-          <ul class="location-list">
-            <li><i class="fa-solid fa-location-dot"></i> Jupiter</li>
-            <li><i class="fa-solid fa-location-dot"></i> Wellington</li>
-            <li><i class="fa-solid fa-location-dot"></i> Lake Worth</li>
-          </ul>
-        </div>
-
-        <div class="col-md-4">
-          <ul class="location-list">
-            <li><i class="fa-solid fa-location-dot"></i> Boynton Beach</li>
-            <li><i class="fa-solid fa-location-dot"></i> Delray Beach</li>
-            <li><i class="fa-solid fa-location-dot"></i> Boca Raton</li>
-          </ul>
-        </div>
+      
       </div>
+
+       <?php include 'all-beach-link.php' ?>
 
     </div>
   </section>

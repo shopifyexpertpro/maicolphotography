@@ -11,7 +11,7 @@ include "header.php";
 <?php
 $heading = "Preparation Guide For Women";
 $short_desc = "";
-$image = "assets/img/preparation/banner.jpg";
+$image = "assets/img/preparation/banner.webp";
 include 'banner.php';
 ?>
 
