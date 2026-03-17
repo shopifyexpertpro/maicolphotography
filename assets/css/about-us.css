@@ -7,11 +7,14 @@
       align-items: center;
       overflow: hidden;
       gap:50px;
+      padding:0px;
     }
-
+.about-page-section .container-fluid {
+  padding:0px;
+}
     .about-content {
       color: var(--white);
-      padding:100px;
+      padding:95px;
       
     }
 

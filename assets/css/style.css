@@ -1692,7 +1692,7 @@ textarea.form-control:focus {
 .footer-title {
   margin-bottom: 16px;
   font-size: 22px;
-  font-weight:500;
+  font-weight: 500;
 }
 
 .footer-links a,
@@ -1700,6 +1700,7 @@ textarea.form-control:focus {
   color: var(--white);
   text-decoration: none;
   opacity: 0.95;
+  font-size: 14px;
 }
 
 .footer-links a:hover,
@@ -1707,6 +1708,7 @@ textarea.form-control:focus {
   text-decoration: underline;
   opacity: 1;
 }
+
 
 .footer-contact .item {
   display: flex;
@@ -1725,7 +1727,7 @@ textarea.form-control:focus {
 .footer-bottom {
   margin-top: 40px;
   padding: 18px 0;
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.12);
   opacity: 0.9;
@@ -1734,8 +1736,6 @@ textarea.form-control:focus {
 .footer-bottom a {
   color: var(--white);
 }
-
-
 /* ready-section */
 
 .ready-section {

@@ -61,7 +61,7 @@
 
     <div class="footer-bottom">
       Copyright © 2018 - 2026 – Maicol Photography. Maicol Headshots.
-      All Rights Reserved | <a href="#">Privacy Policy</a>
+      All Rights Reserved | <a href="privacy-policy.php">Privacy Policy</a>
     </div>
   </div>
 </footer>
